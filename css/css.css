@@ -1,3 +1,7 @@
+:root {
+    --bg:#f1e7e7;
+    --width:80%
+}
 *
 {  
     box-sizing: border-box;
@@ -18,7 +22,7 @@ a
     justify-content: space-between;
     height: 200px;
     padding: 25px 0;
-    background-color: #f1e7e7;
+    background-color: var(--bg);
 }
 header img {
     width:150px; 
@@ -66,7 +70,7 @@ footer
     width: 100%;
     padding-top: 100px;
     padding-bottom: 20px;
-    background-color: #f1e7e7; ;
+    background-color: var(--bg) ;
 }
 
 .footer__container__contact--info span:hover
@@ -116,11 +120,11 @@ img.footer__container--logo
 }
 .row
 {
-display: flex;
-flex-wrap: wrap;
-margin-left: -4px; 
-margin-right: -4px;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px; 
+    margin-right: -4px;
+    justify-content: space-between;
 }
 a.download
 {
@@ -133,7 +137,7 @@ a.download
     width: 20px;
 
 }
-section
+section .menu.flex
 {
     margin: 0 7rem;
     position: relative;
@@ -157,7 +161,6 @@ section
 }
 .city-item > a
 {
-    
     padding: 0 10px;
 }
 ul.menu
@@ -173,4 +176,28 @@ ul.menu
 li.link
 {
     padding: 0 20px;
+}
+section .flex.contents {
+    align-items: flex-start;
+    margin: 0 3rem;
+}
+.left {
+    width: 20%;
+   
+
+}
+.right {
+    width: 80%;
+    background-color: red;
+}
+.v-menu {
+    display: block !important;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    overflow: auto;
+    padding: 10px 0;
+    text-align: center;
+}
+section ul.menu > li > a:hover {
+    color: red;
 }
