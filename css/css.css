@@ -188,7 +188,6 @@ section .flex.contents {
 }
 .right {
     width: 80%;
-    background-color: red;
 }
 .v-menu {
     display: block !important;
@@ -200,4 +199,60 @@ section .flex.contents {
 }
 section ul.menu > li > a:hover {
     color: red;
+}
+div.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.product {
+    width: 20%;
+    padding: 10px;
+}
+
+div.product > div {
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+div.product img {
+    width: 100%;
+    transition: transform ease-in 2s;
+}
+
+div.product img:hover {
+    transform: scale(1.2);
+}
+button
+{
+    margin: auto;
+    display: block;
+}
+@keyframes doimau {
+    0% {
+      background-color: gold;
+    }
+    25% {
+      background-color: aquamarine;
+    }
+    75% {
+      background-color: cadetblue;
+    }
+    100% {
+      background-color: blue;
+    }
+  }
+div.promo {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    background-color: gold;
+    color: red;
+    top: 0;
+    right: 0;
+    border-radius: 0 8px 0 8px;
+    animation: doimau 2s infinite;
 }
