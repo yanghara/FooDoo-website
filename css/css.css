@@ -200,6 +200,7 @@ section .flex.contents {
 section ul.menu > li > a:hover {
     color: red;
 }
+
 div.products {
     display: flex;
     flex-wrap: wrap;
@@ -207,7 +208,7 @@ div.products {
 
 div.product {
     width: 20%;
-    padding: 10px;
+    padding: 5px;
 }
 
 div.product > div {
@@ -230,6 +231,10 @@ button
 {
     margin: auto;
     display: block;
+    background-color: var(--bg);
+    border: 1px solid #333;
+    border-radius: 3px;
+    padding: 3px 3px;
 }
 @keyframes doimau {
     0% {
@@ -244,7 +249,21 @@ button
     100% {
       background-color: blue;
     }
-  }
+}
+@keyframes changepro {
+    0% {
+        color: rgb(224, 202, 75);
+    }
+    25% {
+        color: rgb(250, 158, 27);
+    }
+    75% {
+        color:#add325
+    }
+    100% {
+        color: #bdba2d;
+    }
+}
 div.promo {
     position: absolute;
     font-size: 20px;
@@ -256,3 +275,33 @@ div.promo {
     border-radius: 0 8px 0 8px;
     animation: doimau 2s infinite;
 }
+div.news{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+div.new{
+    width: 20%;
+    padding: 5px;
+}
+div.new > div {
+    border: 1px groove var(--bg) ;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(var(--bg),#f5ecf5,var(--bg));
+}
+div.promotion >i
+{
+    animation: changepro 2s infinite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2.subject {
+    
+    font-size: 1.5rem;
+    color: rgb(95, 95, 190);
+    text-shadow: 3px 4px 4px rgb(95, 95, 190);
+    ;
+  }
