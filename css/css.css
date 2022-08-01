@@ -73,7 +73,7 @@ footer
     background-color: var(--bg) ;
 }
 
-.footer__container__contact--info span:hover
+.info span:hover
 {
     color: #fa9e1b;
 }
@@ -96,23 +96,23 @@ ul
     flex-wrap: wrap;
     
 }
-.footer__container--social img
+.social img
 {
     width: 30px;
     margin-right: 3em;
 }
-img.footer__container--logo
+img.logo
 {
     width: 10em;
 }
-.footer__container__info--img img
+.infoimg img
 {
    display: block;
    max-width: 100%;
    width: 20px;
    margin-right: 10px;
 }
-.footer__container__contact--info
+.info
 {
     display: flex;
     align-items: center;   
@@ -292,6 +292,12 @@ div.new > div {
     overflow: hidden;
     background: linear-gradient(var(--bg),#f5ecf5,var(--bg));
 }
+div.new img {
+    width: 100%;
+}
+.star > i {
+    color: yellow;
+}
 div.promotion >i
 {
     animation: changepro 2s infinite;
@@ -302,6 +308,36 @@ h2.subject {
     
     font-size: 1.5rem;
     color: rgb(95, 95, 190);
-    text-shadow: 3px 4px 4px rgb(95, 95, 190);
-    ;
-  }
+    text-shadow: 3px 4px 4px rgb(95, 95, 190);    
+}
+div.markets{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+div.market{
+    width: 20%;
+    padding: 5px;
+}
+div.market > div {
+    border: .5px groove var(--bg) ;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+div.market  img {
+    border-radius: 8px;
+    transition: all .15s linear;
+    width: 100%;
+}
+div.promot >i{
+    color: red;
+}
+.viewall {
+    color: inherit;
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
