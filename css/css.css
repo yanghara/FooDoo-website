@@ -20,7 +20,7 @@ a
 
 nav {
     background-color: #F7E2E2;
-    height: 45px;
+    height: 60px;
     color: #180A0A;
 }
 
@@ -251,14 +251,14 @@ div.product img {
 div.product img:hover {
     transform: scale(1.2);
 }
-button
+.button
 {
     margin: auto;
     display: block;
     background-color: var(--bg);
     border: 1px solid #333;
-    border-radius: 3px;
-    padding: 3px 3px;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 @keyframes doimau {
     0% {
@@ -360,11 +360,14 @@ div.promot >i{
 }
 .viewall {
     color: inherit;
-    display: block;
-    font-weight: 700;
-    padding: 10px;
-    align-items: center;
-
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 25em;
+    text-align: center;
+}
+.shipper
+{
+    margin: 70px 0;
 }
 .fighter {
     height: 100%;
@@ -374,10 +377,10 @@ div.promot >i{
 div.title {
     align-items: center;
     display: flex;
-    justify-content: space-between;
     position: relative;
     text-transform: uppercase;
-    padding: 1px 10px 1px;
+    padding: 7px 10px 7px;
+    color: red;
 }
 div.fighter {
     display: flex;

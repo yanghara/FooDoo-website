@@ -25,9 +25,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
         />
         <link href="/css/css.css" rel="stylesheet" />
+        <script src="/js/main.js"></script>
 
     </head>
-    <body>
+    <body id="main" onload="init()">
         <nav class="flex">
             <div class="flex">
     
@@ -44,7 +45,7 @@
     
             </div>
         </nav>
-    
+        
         <header class="flex">
             <div>
                 <img src="images/foodoo.png" alt="logo"/>
@@ -65,6 +66,7 @@
                 </ul>
             </div>
         </header>
+
     <section class="menu flex">
 <ul class="menu flex">
     <li class="content " title="tinh/thanh pho">
@@ -122,6 +124,7 @@ Tỉnh/ Thành phố
 
     <section class="img ads">
     </section>
+
     <section class="flex contents">
         <section class="left">
            <ul class="menu v-menu">
@@ -152,7 +155,7 @@ Tỉnh/ Thành phố
                         <h3>Trà sữa GongCha nhà làm</h3>
                         <h4>25.000vnđ</h4>
                         <div>
-                            <button >Chọn mua</button></div>
+                            <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -164,7 +167,7 @@ Tỉnh/ Thành phố
                         </div>
                         <h3>Trà sữa hạnh phúc Tocotoco</h3>
                         <h4>23.000vnđ</h4>
-                        <div><button >Chọn mua</button></div>
+                        <div><button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -176,7 +179,7 @@ Tỉnh/ Thành phố
                         </div>
                         <h3>Cơm tấm Sài Thành cô Hạnh</h3>
                         <h4>35.000vnđ</h4>
-                        <div><button >Chọn mua</button></div>
+                        <div><button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -186,9 +189,9 @@ Tỉnh/ Thành phố
                             <img src="/images/bun-thit-nuong.jpg" alt="bún thịt nướng" width="200px" height="200px" />
 
                         </div>
-                        <h3>Bún thịt nướng đặt biệt</h3>
+                        <h3>Bún thịt nướng Nam đặt biệt</h3>
                         <h4>35.000vnđ</h4>
-                        <div><button >Chọn mua</button></div>
+                        <div><button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -196,12 +199,11 @@ Tỉnh/ Thành phố
                     <div>
                         <div>
                             <img src="/images/comga1.jpg" alt="cơm gà" width="200px" height="200px" />
-
                         </div>
-                        <h3>Cơm gà Tam kỳ cô Vân</h3>
+                        <h3>Cơm gà ta Tam kỳ cô Vân</h3>
                         <h4>35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -214,7 +216,7 @@ Tỉnh/ Thành phố
                         <h3>Bánh mì thịt nướng Ánh Tuyết</h3>
                         <h4>30.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                     </div>
                 </div>
                 <div class="product">
@@ -226,7 +228,7 @@ Tỉnh/ Thành phố
                         <h3>Bánh mì sandwich thơm - 3 phần</h3>
                         <h4>20.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -239,7 +241,7 @@ Tỉnh/ Thành phố
                         <h3>Bánh mì giòn da thơm thịt</h3>
                         <h4>25.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -252,7 +254,7 @@ Tỉnh/ Thành phố
                         <h3>Bánh kem tươi Cô Thành</h3>
                         <h4>130.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                     </div>
                 </div>
                 <div class="product">
@@ -264,7 +266,7 @@ Tỉnh/ Thành phố
                         <h3>Phở bò tái chuẩn Hà Nội</h3>
                         <h4>35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -277,7 +279,7 @@ Tỉnh/ Thành phố
                         <h3>Phở bò tái chuẩn Hà Nội</h3>
                         <h4>35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -290,7 +292,7 @@ Tỉnh/ Thành phố
                         <h3>Bánh tráng trộn Chú Cuội</h3>
                         <h4>15.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -303,7 +305,7 @@ Tỉnh/ Thành phố
                         <h3>Cơm gà xối mỡ Dương Châu</h3>
                         <h4>25.000vnđ - 35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -316,7 +318,7 @@ Tỉnh/ Thành phố
                         <h3>Phở tái gân bò viên Hà Nội</h3>
                         <h4>35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                     </div>
                 </div>
                 <div class="product">
@@ -328,7 +330,7 @@ Tỉnh/ Thành phố
                         <h3>Bún thịt nướng miền Nam</h3>
                         <h4>35.000vnđ</h4>
                         <div>
-                        <button >Chọn mua</button></div>
+                        <button class="button">Chọn mua</button></div>
                         <div class="promo">QC</div>
                     </div>
                 </div>
@@ -353,7 +355,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 4.8 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -371,7 +373,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 Freeship 3.0 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -389,7 +391,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i></i></i></i>
                                 5.0 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -407,7 +409,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                  3.5 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -425,7 +427,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                  5.5 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -443,7 +445,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 7.0 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -461,7 +463,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                  3.8 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -479,7 +481,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 7.3 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -497,7 +499,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 Freeship 2.5 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                     <div class="new">
@@ -515,7 +517,7 @@ Tỉnh/ Thành phố
                             </div>
                             <div class="promotion"><i class="fa-solid fa-location-dot"></i>
                                 4.5 km</div>
-                                <div><button >Chọn mua</button></div>
+                                <div><button class="button">Chọn mua</button></div>
                         </div>
                     </div>   
                 </div>
@@ -587,6 +589,7 @@ Tỉnh/ Thành phố
         </section>
         
     </section>
+
     <section class="shipper">
         <div class="title">
             <h2>Trở thành chiến binh Foodoo ngay hôm nay</h2>
@@ -594,7 +597,7 @@ Tỉnh/ Thành phố
 
         <div class="fighter">
             <div class="intro">
-            <h3>Trở thành chiến binh Foodoo-nhanh và miễn phí</h3>
+            <h3>Trở thành chiến binh Foodoo - nhanh và miễn phí</h3>
             <p>Dễ dàng một Foodooer hạnh phùc</p>
             <p>Foodoo - ứng dụng giao đồ ăn thân thiện, nhanh chóng, miễn phí dành cho mọi nhà</p>
             <p>Đăng ký và làm thành viên của ngôi nhà chung Foodoo</p>
