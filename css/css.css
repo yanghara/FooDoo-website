@@ -385,7 +385,7 @@ div.title {
 }
 div.fighter {
     display: flex;
-    background-image: url(/images/shipper.jpg);
+    background-image: url(./images/shipper.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
