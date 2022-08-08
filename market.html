@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle K</title>
+    <link href="./images/logo.jpg" rel="shortcut icon"/>
+
+    <link rel="stylesheet" href="./css/market.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="./js/script_market.js"></script>
+
+</head>
+<body  onload="init()">
+    <!--Nav đầu trang-->
+    <nav class="flex">
+        <div class="flex">
+
+            <ul class="flex">
+                <li><a href="#">  
+                    Tải ứng dụng Foodoo
+                    <button>IOS</button>
+                    <button>Android</button></a></li>
+                <li><a href="#">Đặt giao hàng</a></li>
+                <li><a href="#">Đi chợ cùng Foodoo</a></li>
+                <li><a href="#">Chăm sóc khách hàng</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <header class="flex">
+        <div>
+            <img src="./imgs/logo.jpg" alt="logo"/>
+        </div>
+
+        <div class="flex"> 
+            <div class="find">
+                <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <ul class="menu flex">
+                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="#">Đăng ký</a></li>
+                <li><a href="#">Hỗ trợ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <aside class="ads">
+        <div></div>
+        <div></div>
+    </aside>
+
+    <section class="container">
+        <main class="order-page flex">
+            <div>
+                <!--Gồm 2 phần: Menu món và box order-->
+                <!--Phần 1: giới thiệu cửa hàng và Menu món-->
+                <div class= "left"><!--kích thước = 800px-->
+
+                    <!--1.1giới thiệu cửa hàng-->
+
+                    <div class="title-box">
+                        <div>
+                            <div class="flex"> 
+                                <img src="./imgs/market5.png"/>
+                                <img src="./imgs/market2.jpg"/>
+                                <img src="./imgs/market3.jpg"/>
+                                <img src="./imgs/market4.jpg"/>
+                            </div>
+
+                            <div class="flex">
+                                <h1 class="subtitle"> CIRCLE K <a href="#"><i class="fa-solid fa-heart"></i></a></h1>
+                            </div>
+
+                            <div class="store">
+                                <a href="#">Cửa hàng tiện lợi</a>
+                            </div>
+
+                            <div>
+                                <div class="flex add">
+
+                                    <div class="flex add_1">
+                                        <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
+                                        <div class="open_close" style="color:#7ed321">Đang mở cửa</div>
+                                    </div>
+                
+                                    <div class="flex add_2">
+                                        <div>
+                                            <a href="#"><i class="fa-solid fa-link"></i>https://foodoo.vn/circlekgovap</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address">
+                                371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP Hồ Chí Minh</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--1.2giới thiệu menu món ăn-->
+
+                    <div  class="menu-store">
+                        <!--danh mục các món có trong cửa hàng-->
+                        <div class="menu-store-1">
+                            <div style="margin-top: 0px;">
+                                <div style="font-size: 15px;" class="categorize">
+                                    <ul>
+                                        <li><a href="#nuocgiaikhat">NƯỚC GIẢI KHÁT</a></li>
+                                        <li><a href="#thucannong">THỨC ĂN NÓNG</a></li>
+                                        <li><a href="#suavaspsua">SỮA VÀ SẢN PHẨM TỪ SỮA</a></li>
+                                        <li><a href="#kem">KEM</a></li>
+                                        <li><a href="#snacks">SNACKS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--các món ăn rong từng danh mục-->
+                        <div class="menu-store-2">
+                            <div id="nuocgiaikhat">
+                                <div class="title-categorize">
+                                   <h3>NƯỚC GIẢI KHÁT</h3>
+                                </div>
+                                <ul>
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink2.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Cà phê phin sữa nóng</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink3.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Trà sữa thái xanh</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink4.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Trà chanh</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink1.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Froster</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink5.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Trà đào</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 17.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/drink6.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Cà phê phin đen đá</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 18.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+                                   
+                                </ul>
+                            </div>
+
+                            <div id="thucannong">
+                                <div class="title-categorize">
+                                   <h3>THỨC ĂN NÓNG</h3>
+                                </div>
+                                <ul>
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food1.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Mì trộn xúc xích trứng chiên</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 25.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food2.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Bánh bao trứng cút</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food3.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Mì trộn Indomie</div>
+                                            <div class="color-drinksize" style="width:120px">Size: 15.000</div>
+                                            <div title="Có trứng" class="color-drinksize" style="width:120px">Size: 20.000</div>
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food4.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Bánh giò</div>
+                                            <div class="color-drinksize" style="width:120px">Size M: 10.000</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 25.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food5.png"/>
+                                        </div>
+                                        <div>
+                                            <div>DimSum</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/food6.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Bánh mì ốp la</div>
+                                            <div class="color-drinksize" style="width:120px">Size L: 18.000</div>
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+                                   
+                                </ul>
+                            </div>
+
+                            <div id="suavaspsua">
+                                <div class="title-categorize">
+                                   <h3>SỮA VÀ SẢN PHẨM TỪ SỮA</h3>
+                                </div>
+                                <ul>
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk1.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Milo</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 10.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk2.png"/>
+                                        </div>
+                                        <div>
+                                            <div>Fami</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 7.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk3.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Vinamil</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 6.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk4.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Yakun</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 25.000/lốc</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk5.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Nutriboots</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 11.000</div>
+                                            
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/milk6.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Sữa chua Vinamil</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 25.000/lốc</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+                                   
+                                </ul>
+                            </div>
+
+                            <div id="kem">
+                                <div class="title-categorize">
+                                   <h3>KEM</h3>
+                                </div>
+                                <ul>
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem1.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem Kikat vị trà xanh</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 10.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem2.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem Cornetto</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 7.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem3.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem Paddle Pop Turnado</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 9.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem4.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem Melona</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 23.000</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem5.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem Celano</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 18.000</div>
+                                            
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/kem6.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Kem hộp Wall's</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 25.000/lốc</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+                                   
+                                </ul>
+                            </div>
+
+                            <div id="snacks">
+                                <div class="title-categorize">
+                                   <h3>SNACKS</h3>
+                                </div>
+                                <ul>
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack1.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack pho mát miếng Oishi gói 39g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 6.500</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack2.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack khoai tây vị tảo biển nori Lay's gói 95g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 21.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack3.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack khoai tây vị tảo biển Slide lon 160g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 48.000</div>
+                                            
+                                        </div>
+                                        <span >
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack4.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack vị gà quay da giòn Poca Partyz gói 30g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 6.500/lốc</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack5.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack khoai tây vị tảo ngọt TaYo X gói 28g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 5.500</div>
+                                            
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+
+                                    <div class="drink-food">
+                                        <div class="img-width">
+                                            <img src="./imgs/circlek/snack6.jpg"/>
+                                        </div>
+                                        <div>
+                                            <div>Snack khoai tây vị truyền thống Pringles lon 107g</div>
+                                            <div class="color-drinksize" style="width:120px">Giá: 32.000/lốc</div>
+                                           
+                                        </div>
+                                        <span>
+                                            <i title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
+                                        </span>
+                                    </div>
+                                   
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Phần 2: box để order-->
+                <div class="right"><!--kích thước = 350px-->
+                    <div class="scroll1 scroll2">
+                        <div class="scroll3" style="margin-top: 0;">
+                            <div class="order">
+                                <div class="popup">
+                                    <a class="close">
+                                        <i class="fa-solid fa-x"></i>
+                                    </a>
+                                    <span>Cùng nhau đặt, để rẻ và nhanh hơn</span>
+                                </div>
+
+                                <div class="box-order">
+                                    <div class="box-head" style="display: flex">
+                                        <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                                        <div class="group">
+                                            <a>Đặt nhóm</a>
+                                        </div>
+                                    </div>
+                                    <div class="suborder">
+                                        <div class="list-view">
+                                            <div class="list-view-1">Hãy chọn món yêu thích của bạn trên menu để đặt giao hàng ngay!</div>
+                                        </div>
+                                        <div class="list-view">
+                                            <div class="list-view-2">
+                                                <div>
+                                                    <b>Tổng:</b>
+                                                    <span style="color: gray">
+                                                        (Tạm tính)
+                                                        <a href="#" title="Giá tạm tính chưa bao gồm các ưu đãi và miễn ship"><i class="fa-regular fa-circle-question"></i></a>
+                                                    </span>
+                                                </div>
+                                                <div>
+                                                    <b>= 0đ</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+   </section>
+
+   <!--Phần footer-->
+</body>
+</html>
