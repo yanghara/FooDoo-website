@@ -234,6 +234,22 @@ div.products {
 div.product {
     width: 20%;
     padding: 5px;
+    cursor: pointer;
+}
+.namet {
+    font-size: 16px;
+    font-weight: 700;
+    color: #252525;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    
+}
+.nameb {
+    font-size: 16px;
+    color: #959595;
+    white-space: nowrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 div.product > div {
@@ -260,6 +276,7 @@ div.product img:hover {
     border: 1px solid #333;
     border-radius: 5px;
     padding: 10px 10px;
+    cursor:pointer;
 }
 @keyframes doimau {
     0% {
@@ -308,6 +325,7 @@ div.news{
 div.new{
     width: 20%;
     padding: 5px;
+    cursor: pointer;
 }
 div.new > div {
     border: 1px groove var(--bg) ;
@@ -423,13 +441,59 @@ div.fighter {
     padding: 10px 20px;
     text-align: center;
 }
-.bonus{
-    position: fixed;
-    top: 50%;
+.bonus {
     left: 50%;
+    position: fixed;
+    top: 60%;
+    z-index: 200;
     background-color: #fff;
     position: absolute;
     transform: translate(-50%,-50%);
+    border: 2px solid var(--bg);
     border-radius: 8px;
+    width: 500px;
+    height: 450px;
     display: none;
+}
+.foodooform p{
+    text-align: center;
+    font-weight: 500;
+
+}
+input {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #979797;
+    padding: 0 15px;
+}
+.bForm {
+    background: #e0132b;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+    border: transparent;
+    
+}
+
+#exit {
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 40px;
+}
+#share {
+    font-size: 20px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 40px;
+}
+.num {
+    display: flex;
 }

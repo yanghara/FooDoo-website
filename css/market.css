@@ -238,14 +238,15 @@ div.address {
     height: 1200px;
     flex-grow: 1;
     min-width: 160px;
+   
 }
 
 div.categorize {
+    border: 1px solid blue;
     width: 170px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    
 }
 
 div.categorize ul {
