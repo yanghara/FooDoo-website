@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+:root{
+    --width:80%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.add {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* phần dùng chung cho cả trang web*/
+
+header.flex {
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1C3879;
+    cursor: pointer;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    font-size: 17px;
+}
+
+div.flex {
+    margin: auto;
+}
+
+
+/*phần nav đầu tiên của body*/
+
+nav {
+    background-color: #F7E2E2;
+    height: 45px;
+    color: #180A0A;
+}
+
+nav.flex div.flex {
+    margin: auto;
+}
+
+nav.flex div.flex ul li {
+    margin-left: 20px;
+}
+
+nav.flex div.flex ul li a:hover {
+    color: red;
+}
+
+/*Phần header cho market*/
+header {
+    background-color:#f1e7e7;
+    font-size: 18px;
+    position:relative;
+}
+
+header > div > img {
+    width: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    left: 20px;
+}
+
+div.find > input{
+    width:500px;
+    font-size:20px;
+}
+
+.find > input{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px;
+    border: 1px dotted white;
+}
+
+ul.menu li {
+    
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+ul.menu li a {
+    display: block;
+    padding:10px;
+}
+
+ul.menu li a:hover {
+    background-color: darkblue;
+    color:white;
+    border-radius: 15px;
+    
+}
+
+/*Phần bỏ trống 2 bên màn hình*/
+.ads div {
+    background-color: #f6f6f6;
+    color: #180A0A;
+    font-size: 2rem;
+    text-align:center;
+    padding: 10rem 0;
+    margin: 0;
+    width: calc((100% - var(--width))/2 - 2%);
+    position: fixed;
+}
+
+.ads > div:first-child {
+    left: 1%;
+}
+
+.ads > div:last-child {
+    right: 1%;
+}
+
+/*phần 1.1 giới thiệu cửa hàng*/
+    /*phần dùng chung*/
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1180px;
+}
+
+.order-page {
+    margin: 16px 0;
+}
+
+.left {
+    padding-top: 15px;
+    justify-content: space-between;
+    width: 800px;
+}
+
+/*1.1giới thiệu cửa hàng*/
+
+div.title-box div.flex {
+    margin-top: 5px;
+}
+
+div.title-box {
+    background-color: #fff;
+    border: transparent;
+    border-radius: 10px;
+    width: 800px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+div.flex h1.subtitle {
+    margin: 10px 35px;
+}
+
+div.subtitle {
+    font-size: 24px;
+    font-weight: 700;   
+}
+
+section div.flex img {
+    width: 200px;
+    padding:0;
+}
+
+div.store {
+    margin: 10px 0;
+    border: 1px dashed #000;
+    font-size: 20px;
+    color: #000 !important;
+    /*margin-right: 75%;*/
+    margin-left: 35px;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    width: 180px;
+}
+
+div.add_1 {
+    margin: 5px 35px !important;
+}
+
+div.add_1 div:first-child {
+    margin-right: 20px;
+}
+
+div.add_2 div:first-child {
+    margin-right: 30px;
+}
+
+.but  input{
+    background-color:antiquewhite;
+    border: 1px solid #f1e7e7;
+    border-radius: 5px;;
+}
+
+div.address {
+    margin-left: 35px;
+    padding:5px 0;
+}
+
+/*1.2 danh mục tên món ăn của quán*/
+
+.menu-store {
+    width:800px;
+    height: 1200px;
+    display: flex;
+    
+}
+
+.menu-store-1 {
+    height: 1200px;
+    flex-grow: 1;
+    min-width: 160px;
+}
+
+div.categorize {
+    width: 170px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+div.categorize ul {
+    padding: 0;
+}
+
+div.categorize ul li
+{
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.menu-store-2 {
+    width: 656px;
+    height: 1200px;
+}
+
+div.menu-store-2 > div {
+    width: 625px;
+    background-color: #fff;
+    height: 1000px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+div.title-categorize h3 {
+    padding: 16px 16px 0;
+    margin:0;
+    color: #876445;
+}
+
+div.menu-store-2 ul {
+    padding: 0;
+}
+
+div.drink-food {
+    padding: 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+div.img-width > img {
+    width: 120px;
+}
+
+
+div.drink-food div:nth-child(2) > div {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+div.drink-food span {
+    position: absolute;
+     width:20px; 
+     height: 20px; 
+     right: 30px;
+     top: 20px;
+     transition:all .3s;
+}
+
+div.drink-food span:hover {
+    color: red;
+    
+}
+
+div.color-drinksize {
+    color: #377D71;
+    margin-left: 20px;
+}
+
+/*phần 1.2 Box order*/
+
+div.right {
+    width: 350px;
+    margin: 20px 20px;
+    top: 155px;
+    right: 10px;
+    left: 67%;
+    position: fixed;
+}
+
+div.order {
+    width: 350px;
+    height: 180px;
+}
+
+div.popup {
+    position: relative;
+    background-color: #f1e7e7;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 10px;
+}
+
+.popup::after {
+    position: absolute;
+    content:"";
+    top: 100%;
+    left: 85%;
+    border-style: solid;
+    border-width: 8px;
+    border-color: rgb(67, 67, 67) transparent transparent rgb(67, 67, 67);
+}
+
+div.popup a {
+    position: absolute;
+    font-size: 12px;
+    top: 5px;
+    right: 10px;
+}
+
+div.popup > span {
+    padding: 20px;
+    text-align: center;
+}
+
+div.box-order {
+    background-color: #f1e7e7;
+}
+
+div.box-head {
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+div.box-head div.group {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    display:inline-block;
+    background-color: #FCE2DB;
+    cursor: pointer;
+    width: 90px;
+    height: 39px;
+    margin: auto;
+    line-height: 28px;
+}
+
+div.list-view-1 {
+    padding: 16px;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+div.list-view-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
