@@ -424,3 +424,13 @@ div.fighter {
     padding: 10px 20px;
     text-align: center;
 }
+.bonus{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    display: none;
+}
