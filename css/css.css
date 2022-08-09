@@ -444,8 +444,9 @@ div.fighter {
 .bonus {
     left: 50%;
     position: fixed;
-    top: 60%;
+    top: 50%;
     z-index: 200;
+    position: inherit;
     background-color: #fff;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -453,7 +454,7 @@ div.fighter {
     border-radius: 8px;
     width: 500px;
     height: 450px;
-    display: none;
+   /* display: none;*/
 }
 .foodooform p{
     text-align: center;
