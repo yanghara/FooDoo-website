@@ -447,14 +447,14 @@ div.fighter {
     top: 50%;
     z-index: 200;
     position: inherit;
-    background-color: #fff;
+    background-color: rgb(194, 116, 116);
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-20%,30%);
     border: 2px solid var(--bg);
     border-radius: 8px;
     width: 500px;
     height: 450px;
-   /* display: none;*/
+    display: none;
 }
 .foodooform p{
     text-align: center;
@@ -497,4 +497,12 @@ input {
 }
 .num {
     display: flex;
+}
+.bigger {
+    
+    position: inherit;
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    visibility: hidden;
 }

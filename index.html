@@ -12,6 +12,17 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
         />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+          wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animate__animated", // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+          });
+          wow.init();
+        </script>
         <link 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         rel="stylesheet" 
@@ -29,7 +40,7 @@
         <script src="./js/main.js"></script>
 
     </head>
-    <body id="main" >
+    <body id="main" onload="init()">
         <nav class="flex">
             <div class="flex">
     
@@ -111,7 +122,7 @@ Tỉnh/ Thành phố
         <a href="#" title="Quảng Ngãi">Quảng Ngãi</a> 
     </li>
     <li class="city-item ">
-        <a href="#" title="Cà Mau">Hồ Chí Minh</a> 
+        <a href="#" title="Cà Mau">Cà Mau</a> 
     </li>
 </ul>
 </li>
@@ -340,10 +351,13 @@ Tỉnh/ Thành phố
             <section class="composition">
                 <h2 class="subject">Món Mới</h2>
                 <div class="news">
-                    <div class="new">
+                    <div class="new" >
                         <div>
                             <div>
-                                <img src="./images/1.jpg" alt="hamburger" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/1.jpg" alt="hamburger" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/1.jpg" alt="hamburger" />
                             </div>
                             <h3>Hamburger gà rán</h3>
                             <div class="star">
@@ -361,7 +375,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/2.jpg" alt="bánh" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/2.jpg" alt="bánh" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/2.jpg" alt="bánh" />
                             </div>
                             <h3>Bánh nhân tôm trứng</h3>
                             <div class="star">
@@ -379,7 +396,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/3.jpg" alt="beefsteak" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/3.jpg" alt="beefsteak" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/3.jpg" alt="beefsteak" />
                             </div>
                             <h3>Beefsteak</h3>
                             <div class="star">
@@ -397,7 +417,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/4.jpg" alt="bánh xèo" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/4.jpg" alt="bánh xèo" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/4.jpg" alt="bánh xèo" />
                             </div>
                             <h3>Bánh xèo cô Sáu</h3>
                             <div class="star">
@@ -415,7 +438,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/5.jpg" alt="Bánh bạch tuột" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/5.jpg" alt="Bánh bạch tuột" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/5.jpg" alt="Bánh bạch tuột" />
                             </div>
                             <h3>Bánh bạch tuột</h3>
                             <div class="star">
@@ -433,7 +459,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/6.jpg" alt="sushi" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/6.jpg" alt="sushi" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/6.jpg" alt="sushi" />
                             </div>
                             <h3>Sushi Nhật Bản</h3>
                             <div class="star">
@@ -451,7 +480,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/7.jpg" alt="kem" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/7.jpg" alt="kem" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/7.jpg" alt="kem"  />
                             </div>
                             <h3>Kem các vị</h3>
                             <div class="star">
@@ -469,7 +501,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/8.jpg" alt="bánh" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/8.jpg" alt="bánh" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/8.jpg" alt="bánh" />
                             </div>
                             <h3>Bánh Donut Chocolate</h3>
                             <div class="star">
@@ -487,7 +522,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/9.png" alt="nem" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/9.png" alt="nem" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/9.png" alt="nem" />
                             </div>
                             <h3>Nem chua Thanh Hóa</h3>
                             <div class="star">
@@ -505,7 +543,10 @@ Tỉnh/ Thành phố
                     <div class="new">
                         <div>
                             <div>
-                                <img src="./images/10.jpg" alt="gỏi cuốn" width="200px" height="200px" />
+                                <img class="wow animate__heartBeat" src="./images/10.jpg" alt="gỏi cuốn" width="200px" height="200px" />
+                            </div>
+                            <div class="bigger">
+                                <img src="./images/10.jpg" alt="gỏi cuốn" />
                             </div>
                             <h3>Gỏi cuốn Hà Giang</h3>
                             <div class="star">

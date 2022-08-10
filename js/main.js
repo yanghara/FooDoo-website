@@ -14,20 +14,13 @@ $(document).ready(function(){
 });
 function DK(){
     if (confirm("BẠN ĐÃ CHẮC CHẮN CHƯA?")==true) {
-        alert("CHÚC MỪNG VÀ CẢM ƠN ĐÃ TIN TƯỞNG CHÚNG TÔI!")
+        alert("CHÚNG TÔI SẼ LIỆN HỆ VỚI BẠN TRONG THỜI GIAN SỚM NHẤT! XIN CẢM ƠN!")
 
        }    else {
         alert( "XIN THỬ LẠI!")
        }
 }
 
-    /*var e=document.getElementById("main")
-    let b=document.getElementsByClassName("bForm")
-    b.onclick = function(){
-        e.style.backgroundColor = "blue";
-    }*/
-
-    
 
 
 
