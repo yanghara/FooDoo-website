@@ -10,6 +10,11 @@ html {
     box-sizing: border-box;
 }
 
+@font-face {
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: newfont;
+}
+
 .flex {
     display: flex;
 }
@@ -88,6 +93,7 @@ header > div > img {
     transform: translateY(-50%);
     position:absolute;
     left: 20px;
+    cursor: pointer;
 }
 
 div.find > input{
@@ -401,4 +407,18 @@ div.list-view-2 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+}
+.go {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 100px;
+    padding: 0.5rem 0.5rem;
+    background-color:orange;
+    color: white;
+    text-align: center;
+}
+.go:hover {
+    color: white;
 }

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sản phẩm của Foodoo - ngon, rẻ, chất lượng</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Đồ ăn, nước uống, ăn vặt, mua sắm">
+        <meta name="description" content="Đặt đồ ăn" />
+        <meta http-equiv="refresh"content="1800" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./images/logo.jpg" rel="shortcut icon"/>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+          wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animate__animated", // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true, // default
+          });
+          wow.init();
+        </script>
+        <link 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+        rel="stylesheet" 
+        /> 
+        <link
+        href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css"
+        rel="stylesheet"
+        />
+        <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="./css/product.css" rel="stylesheet" />
+        <script src="./js/product.js"></script>
+    </head>
+    <body onload="init()">
+        <nav class="flex">
+            <div class="flex">
+    
+                <ul class="flex">
+                    <li><a href="#download">  
+                        Tải ứng dụng Foodoo
+                        <button>IOS</button>
+                        <button>Android</button></a></li>
+                    <li><a href="#">Đặt giao hàng</a></li>
+                    <li><a href="#">Đi chợ cùng Foodoo</a></li>
+                    <li><a href="cskh.html">Chăm sóc khách hàng</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+    
+            </div>
+        </nav>
+        
+        <header class="flex">
+            <div>
+                <img onclick="back()" src="./images/foodoo.png" alt="logo"/>
+            </div>
+    
+            <div class="flex"> 
+                <div class="find">
+                    <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+    
+            <div>
+                <ul class="menu flex">
+                    <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+                    <li><a href="https://www.facebook.com/">Đăng ký</a></li>
+                    <li><a href="#">Hỗ trợ</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="now" >
+           <section class="left">
+            <div class="sticky">
+                        <ul class="menu-store-1" style="position:relative;">
+                            <li><a href="#sangtruatoi">BỮA SÁNG, TRƯA, TỐI</a></li>
+                            <li><a href="#nuocuong">CÁC LOẠI NƯỚC GIẢI KHÁT</a></li>
+                            <li><a href="#bunphomi">CÁC LOẠI MÌ, BÚN</a></li>
+                            <li><a href="#com">CÁC LOẠI CƠM VIỆT NAM</a></li>
+                            <li><a href="#anvat">ĂN VẶT</a></li>
+                        </ul>
+            </div>
+           </section>
+           <section class="right">
+            <div class="search">
+                <span><select>
+                    <option value="Gần đây nhất">Gần đây nhất</option>
+                    <option value="Nhiều đánh giá nhất">Nhiều đánh giá nhất</option>
+                </select></span>
+                <span class="chip">Đang mở cửa</span>
+            </div>
+            <div class="products">
+                    <h2 id="sangtruatoi" class="subject">BỮA SÁNG, TRƯA, TỐI</h2>
+                    <div class="product">
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg1" src="./images/sang_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Thưởng thức buổi sáng cùng Foodoo</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg2" src="./images/trua_1.jpg" width="300px" height="200px"/>
+                                </div>
+                                <div class="note">Thưởng thức buổi trưa cùng Foodoo</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>6 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg3" src="./images/toi_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Thưởng thức buổi tối cùng Foodoo</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>9 quán gần đây</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="nuocuong" class="subject">CÁC LOẠI NƯỚC GIẢI KHÁT</h2>
+                    <div class="product">
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg4" src="./images/tra_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Các cửa hàng trà sữa gần đây</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg5" src="./images/to_1.jpg" width="300px" height="200px"/>
+                                </div>
+                                <div class="note">Các quán sinh tố ngon cùng Foodoo</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>6 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg6" src="./images/cafe_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Cafe sáng cùng bạn bè, gia đình</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>9 quán gần đây</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="bunphomi" class="subject">CÁC LOẠI MÌ, BÚN</h2>
+                    <div class="product">
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg7" src="./images/bun_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Bún bò, bún măng, bún các loại</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>7 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg8" src="./images/pho_1.jpg" width="300px" height="200px"/>
+                                </div>
+                                <div class="note">Phở tái, nạm, bò viên</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>9 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg9" src="./images/mi_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Mì quảng, mì ý các loại</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 cửa hàng gần đây</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="com" class="subject">CÁC LOẠI CƠM VIỆT NAM</h2>
+                    <div class="product">
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg10" src="./images/com_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Cơm tấm, sườn, các loại</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImga" src="./images/ga_1.jpg" width="300px" height="200px"/>
+                                </div>
+                                <div class="note">Cơm gà chiên, cơm gà xối mỡ ...</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 tiệm gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg12" src="./images/nieu_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Cơm niêu, cơm lam, cơm cháy, ...</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>3 cửa hàng gần đây</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 id="anvat" class="subject">CÁC LOẠI ĐỒ ĂN VẶT</h2>
+                    <div class="product">
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg13" src="./images/keo_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Các loại kẹo ngọt tuổi thơ</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>5 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg14" src="./images/banh_1.jpg" width="300px" height="200px"/>
+                                </div>
+                                <div class="note">Các loại bánh ngọt tuổi thơ</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>6 quán gần đây</div>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <div>
+                                <div>
+                                    <img id="mainImg15" src="./images/nuoc_1.jpg" width="250px" height="200px"/>
+                                </div>
+                                <div class="note">Các loại nước có ga, nước ngọt</div>
+                                <div class="note"><i id="lo" class="fa-solid fa-location-dot"></i>9 quán gần đây</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+           </section>
+        </section>
+        <a class="go" href="javascript:;"><i class="fa-solid fa-angles-up"></i></a>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+<div class="col main">
+    <img class="logo" src="./images/foodoo.png" alt="logo_foodoo"/>
+    <h2>Trường Đại học Mở TP Hồ Chí Minh </h2>
+    <div class="social">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/"><img src="./images/fb.jpg"/></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/"><img src="./images/ube.png"/></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/"><img src="./images/wi.webp"/></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/"><img src="./images/in.png"/></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col contact">
+<h2>CONTRACT INFO</h2>
+<div class="contact">
+    <div class="info">
+        <div class="infoimg">
+            <img src="./images/placeholder.svg"/>
+        </div>
+        <span>371 Nguyễn Kiệm, phường 3, quận Gò Vấp, TP HCM </span>
+    </div>
+    <div class="info">
+        <div class="infoimg">
+            <img src="./images/message.svg"/>
+        </div>
+        <span>1800 5858 84</span>
+    </div>
+    <div class="info">
+        <div class="infoimg">
+            <img src="./images/phone-call.svg"/>
+        </div>
+        <span>quanlydaotao@ou.edu.vn</span>
+    </div>
+    <div class="info">
+        <div class="infoimg">
+            <img src="./images/placeholder.svg"/>
+        </div>
+        <span>https://ou.edu.vn</span>
+    </div>
+</div>
+</div>
+<div id = "download" class="col download">
+    <h2>Tải ứng dụng </h2>
+    <a class="iconapple" href="https://www.apple.com/app-store/" title="App IOS" rel="noreferrer"><img src="./images/ios.png" /></a>
+    <a class="iconandroid" href="https://play.google.com/store/games" title="App ANDROID " rel="noreferrer"><img src="./images/android.png" /></a>
+    <hr>
+</div> 
+                </div>
+            </div>
+        <span class="copyright">"Copyright &copy; 2022 By "<a href="#">Hồ Thanh Thúy</a> and <a href="#">Nguyễn Thị Mỹ Vân </a></span>
+        </footer>
+
+    </body>
+    </html>

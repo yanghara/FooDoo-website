@@ -8,11 +8,16 @@
     --bg: #f1e7e7;
 
 }
+@font-face {
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: newfont;
+}
 div {
     display: block;
 }
 img.logo{
     width: 150px;
+    cursor: pointer;
 }
 .built {
     padding-right: 15px;
@@ -154,7 +159,7 @@ input {
 footer 
 {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 20px;
     background-color: var(--bg) ;
 }

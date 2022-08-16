@@ -1,3 +1,4 @@
+/*phần cả bài*/
 :root {
     --bg:#f1e7e7;
     --width:80%
@@ -8,6 +9,15 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+@font-face {
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: newfont;
+}
+@font-face {
+    src: url(../fonts/static/DancingScript-Regular.ttf);
+    font-family: abc;
+}
+/*...*/
 a
 {
     color: #333;
@@ -17,7 +27,7 @@ a
     display: flex;
     
 }
-
+/*header*/
 nav {
     background-color: #F7E2E2;
     height: 60px;
@@ -82,6 +92,7 @@ header ul.menu li a:hover {
     border-radius: 15px;
     
 }
+/*...*/
 div.ads img {
     width: 500px;
     display: block;
@@ -89,10 +100,11 @@ div.ads img {
     margin: 5px;
     align-items: center;
 }
+/*footer*/
 footer 
 {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 20px;
     background-color: var(--bg) ;
 }
@@ -161,6 +173,7 @@ a.download
     width: 20px;
 
 }
+/*...*/
 section .menu.flex
 {
     margin: 0 7rem;
@@ -208,8 +221,6 @@ section .flex.contents {
 }
 .left {
     width: 20%;
-   
-
 }
 .right {
     width: 80%;
@@ -349,9 +360,10 @@ div.promotion >i
 }
 h2.subject {
     
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: rgb(95, 95, 190);
-    text-shadow: 3px 4px 4px rgb(95, 95, 190);    
+    text-shadow: 3px 4px 4px rgb(95, 95, 190);
+    font-family: newfont;    
 }
 div.markets{
     display:flex;
@@ -401,6 +413,10 @@ div.title {
     padding: 7px 10px 7px;
     color: red;
 }
+div.title >h2 {
+    font-family: abc;
+
+}
 div.fighter {
     display: flex;
     height: 100%;
@@ -441,15 +457,16 @@ div.fighter {
     padding: 10px 20px;
     text-align: center;
 }
+
 .bonus {
     left: 50%;
     position: fixed;
     top: 50%;
-    z-index: 200;
+    z-index: 200;   
     position: inherit;
-    background-color: rgb(194, 116, 116);
+    background-color: #ffd;
     position: absolute;
-    transform: translate(-20%,30%);
+    transform: translate(-50%,-50%);
     border: 2px solid var(--bg);
     border-radius: 8px;
     width: 500px;
@@ -505,4 +522,15 @@ input {
     height: 450px;
     position: absolute;
     visibility: hidden;
+}
+.go {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    width: 100px;
+    padding: 0.5rem 0.5rem;
+    background-color:orange;
+    color: white;
+    text-align: center;
 }

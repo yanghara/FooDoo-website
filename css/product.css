@@ -1,0 +1,289 @@
+:root {
+    --bg:#f1e7e7;
+    --width:80%
+}
+*
+{  
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+@keyframes doimau{
+    0% {
+        color: rgb(224, 202, 75);
+    }
+    25% {
+        color: rgb(250, 158, 27);
+    }
+    75% {
+        color:#add325
+    }
+    100% {
+        color: #bdba2d;
+    }
+}
+@font-face {
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+    font-family: newfont;
+}
+a
+{
+    color: #333;
+    text-decoration: none;
+} 
+.flex {
+    display: flex;
+    
+}
+
+nav {
+    background-color: #F7E2E2;
+    height: 60px;
+    color: #180A0A;
+}
+
+nav.flex div.flex ul li {
+    margin-left: 20px;
+}
+
+nav.flex div.flex ul li a:hover {
+    color: red;
+}
+
+/*phần header trong body*/
+
+header {
+    background-color:#f1e7e7;
+    font-size: 18px;
+    position:relative;
+}
+
+header > div > img {
+    width: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    left: 20px;
+    cursor: pointer;
+}
+
+div.find > input{
+    width:500px;
+    font-size:20px;
+}
+
+.find > input{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px;
+    border: 1px dotted white;
+}
+
+div.flex {
+    margin: auto;
+}
+
+header ul.menu li {
+    
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+header ul.menu li a {
+    display: block;
+    padding:10px;
+}
+
+header ul.menu li a:hover {
+    background-color: darkblue;
+    color:white;
+    border-radius: 15px;
+    
+}
+/*...*/
+/*footer*/
+footer 
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: var(--bg) ;
+}
+
+.info span:hover
+{
+    color: #fa9e1b;
+}
+.copyright
+{  
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    color: #e8a0bf;
+    font-weight: 700;
+}
+.copyright a
+{  
+    color: rgb(201, 102, 148);;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.social img
+{
+    width: 30px;
+    margin-right: 3em;
+}
+img.logo
+{
+    width: 10em;
+}
+.infoimg img
+{
+   display: block;
+   max-width: 100%;
+   width: 20px;
+   margin-right: 10px;
+}
+.info
+{
+    display: flex;
+    align-items: center;   
+    margin-bottom: 10px;    
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px; 
+    margin-right: -4px;
+    justify-content: space-between;
+}
+a.download
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+    height: 35px;
+    width: 20px;
+
+}
+/*...*/
+.now {
+    z-index: 0;
+    top: 200px; 
+    background-image: url(/images/main-banner.jpg);
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+.left {
+    width: 20%;
+}
+.right {
+    width: 80%;
+    margin: 30px;
+}
+.menu-store-1 {
+    display: block !important;
+    overflow: auto;
+    padding: 20px 0;
+}
+ul.menu-store-1 > li {
+    padding: 10px 0px 10px 0px;
+    border: 0.5px double #ebebeb;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+ul.menu-store-1 > li > a {
+    color: red;
+}
+.search {
+    display: flex;
+    background-color: #fff;
+    border: #180A0A;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.chip {
+    margin: 10px;
+    padding: 10px 5px;
+    border: 0.5px double red;
+    border-radius:5px ;
+    background-color: #fff;
+    cursor: pointer;
+}
+select {
+    background-color: #fff;
+    padding: 10px 5px;
+    margin: 10px;
+    padding: 10px 5px;
+    border: 0.5px double red;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.products {
+    background-color: #fff;
+}
+.subject {
+    text-align: center;
+    color: rgb(201, 102, 148);
+    padding-top: 20px;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgb(179, 89, 131);
+    font-family:newfont;
+}
+div.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.pro {
+    width: 33.33%;
+    padding: 5px;
+    cursor: pointer;
+}
+div.pro img {
+    width: 100%;
+}
+div.pro > div {
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+.note {
+    padding: 10px;
+    text-align: center;
+}
+#lo {
+    padding-right: 5px;
+    animation: doimau 2s infinite;
+}
+.go {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 100px;
+    padding: .5rem .5rem;
+    background-color:orange;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+div.sticky {
+    position: fixed;
+    top: 120px;
+    display: block;
+}

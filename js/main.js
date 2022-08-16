@@ -20,7 +20,13 @@ function DK(){
         alert( "XIN THỬ LẠI!")
        }
 }
-
-
-
-
+$(document).ready(function() {
+    $("a.go").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    })
+})
+function back() {
+    location.href ="index.html"
+}
