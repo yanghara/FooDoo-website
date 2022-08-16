@@ -22,10 +22,7 @@
         color: #bdba2d;
     }
 }
-@font-face {
-    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
-    font-family: newfont;
-}
+
 a
 {
     color: #333;
@@ -179,7 +176,7 @@ a.download
 .now {
     z-index: 0;
     top: 200px; 
-    background-image: url(/images/main-banner.jpg);
+    
     background-size: cover;
     overflow: hidden;
     display: flex;
