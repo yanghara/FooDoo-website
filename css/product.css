@@ -176,7 +176,6 @@ a.download
 .now {
     z-index: 0;
     top: 200px; 
-    
     background-size: cover;
     overflow: hidden;
     display: flex;
