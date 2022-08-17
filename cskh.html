@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chăm sóc khách hàng</title>
+
+    <link rel="stylesheet" href="/bt-giuaky/css/cskh.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/bt-giuaky/js/script_cskh.js"></script>
+
+</head>
+<body onload="init()">
+    <!--Phần header-->
+    <nav class="flex">
+        <div class="flex">
+
+            <ul class="flex">
+                <li><a href="#">  
+                    Tải ứng dụng Foodoo
+                    <button>IOS</button>
+                    <button>Android</button></a></li>
+                <li><a href="#">Đặt giao hàng</a></li>
+                <li><a href="#">Đi chợ cùng Foodoo</a></li>
+                <li><a href="#">Chăm sóc khách hàng</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <header class="flex">
+        <div>
+            <img src="imgs/logo.jpg" alt="logo"/>
+        </div>
+
+        <div class="flex"> 
+            <div class="find">
+                <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <ul class="menu flex">
+                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="#">Đăng ký</a></li>
+                <li><a href="#">Hỗ trợ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Phần banner-->
+    <div class="banner" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="subbanner">
+                <h1>Xin chào! Chúng tôi có thể giúp gì cho bạn?</h1>
+                <div>
+                    <div class="input">
+                        <input type="text" placeholder="Nhập từ khóa bạn muốn tìm hiểu"/>
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="contact">
+                        <div>
+                            <div class="sdt">
+                                <a href="#" style="color:white; font-size: 28px;"><i class="fa-regular fa-circle-question"></i></a>
+                                <a href="#" style="color:white; font-size: 28px;">1800 9587</a>
+                                <span style="color:white;">
+                                    (Khiếu nại, góp ý)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <div>
+                            <div class="sdt">
+                                <a href="#" style="color:white; font-size: 28px;"><i class="fa-solid fa-headset"></i></a>
+                                <a href="#" style="color:white; font-size: 28px;">1800 9587</a>
+                                <span style="color:white;">
+                                    (Tư vấn)
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact">
+                        <div>
+                            <div class="sdt">
+                                <a href="#chat" style="color:white; font-size: 28px;"><i class="fa-regular fa-comment-dots"></i></a>
+                                <span style="color:white;">
+                                    Chat
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần body của trang-->
+    <div class="container" >
+        <div class="breakcrumb">
+            <a href="#">Trang chủ</a>
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            <a href="#">Đặt món</a>
+        </div>
+
+        <div class="main_menu">
+            <!--Phần cột đầu tiên-->
+            <div class="row">
+                <div class="col_1">
+                    <div class="menu_col_1">
+                        <div class="item">
+                            <span>
+                                <i class="fa-solid fa-user-large"></i>
+                            </span>
+                            <a href="#">Tài khoản</a>
+                        </div>
+                        <div class="item">
+                            <span>
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                            <a href="#">Đặt hàng</a>
+                        </div>
+                        <div class="item">
+                            <span>
+                                <i class="fa-solid fa-box-archive"></i>
+                            </span>
+                            <a href="#">Quy cách đóng gói</a>
+                        </div>
+                        <div class="item">
+                            <span>
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                            </span>
+                            <a href="#">Phí vận chuyển</a>
+                        </div>
+                        <div class="item">
+                            <span>
+                                <i class="fa-brands fa-wpforms"></i>
+                            </span>
+                            <a href="#">Tuyển dụng</a>
+                        </div>
+                    </div>
+
+                    <div class="support_col_1">
+                        <h3>Thông tin hổ trợ</h3>
+                        <div class="item_menu_support">
+                            <a href="#">Giới thiệu Foodoo</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Hướng dẫn đặt hàng</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Liên hệ</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Khách hàng thân thiết</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Hướng dẫn thanh toán trực tiếp</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Quy trình giao hàng</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Chính sách bảo mật</a>
+                        </div>
+                        <div class="item_menu_support">
+                            <a href="#">Hướng dẫn tải app và sử dụng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--phần cột ở giữa-->
+            <div style="padding: 0 15px;">
+                <div class="row1">
+                    <div class="col_2">
+                        <div class="menu_col_2">
+                            <div class="item2">
+                                <a href="#" id="q1">
+                                    <strong>Tôi đã thanh toán đơn hàng bằng VNPay QR nhưng đã 3 ngày tôi vẫn chưa nhận được tiền hoàn cho đơn đã hủy?</strong>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Nếu quý khách chưa nhận được tiền hoàn vui lòng cung cấp số điện thoại đặt hàng qua fanpage Loship  hoặc email: hotroloship@lozi.vn để Loship cung cấp chứng từ đã hoàn trả cho giao dịch.
+                                </p>
+                                <p>
+                                    Trong trường hợp, quý khách chưa thể đối soát được giao dịch với ngân hàng thẻ, Loship sẽ chuyển thông tin đến cổng thanh toán để đối chiếu với ngân hàng. Loship sẽ phản hồi ngay khi ngân hàng cung cấp đủ thông tin yêu cầu từ quý khách. Do phụ thuộc vào thời gian xử lý của ngân hàng, Loship rất mong quý khách có thể chờ phản hồi sau khi báo cáo.
+                                </p>
+                            </div>
+
+                            <div class="item2">
+                                <a href="#" id="q2">
+                                    <strong>Đăng ký gian hàng trên Loship được miễn phí không?</strong>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Loship có thu phí đăng ký mở tài khoản & cửa hàng từ ngày 01/06/2022. Tuỳ vào khu vực, mức thu phí sẽ khác nhau:
+                                    <ul >
+                                        <li style="list-style-type:circle;">Hồ Chí Minh – Hà Nội – Cần Thơ – Quảng Ninh – Hải Phòng: 550,000.</li>
+                                        <li style="list-style-type:circle;">Đà Nẵng: 1,000,000.</li>
+                                        <li style="list-style-type:circle;">Các TP còn lại: phí đăng ký theo từng khu vực.</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    (*Mức phí này đối tác có thể yêu cầu xuất hoá đơn VAT)
+                                </p>
+
+                            </div>
+
+                            <div class="item2">
+                                <a href="#" id="q3">
+                                    <strong>Tại sao tôi mua quảng cáo Thử quán mới nhưng vẫn chưa được hiển thị?</strong>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Khi hoàn tất thanh toán thành công thì gói quảng cáo Thử quán mới sẽ được kích hoạt và hiển thị trong mục Thử quán mới trên ứng dụng Loship. Ngoài ra, nếu quán không hiển thị có thể do menu đang tắt món, cửa hàng đang tắt nhận đơn hoặc những vấn đề khác. Liên hệ Hỗ trợ cửa hàng Loship hotline 0792160460 (zalo) để được hỗ trợ và kiểm tra độ hiển thị của quán nhanh nhất.
+                                </p>
+                            </div>
+
+                            <div class="item2" >
+                                <a href="#" id="q4">
+                                    <strong>Tôi muốn thay đổi hoặc hủy bỏ đơn hàng đã mua thì sao?</strong>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Việc thay đổi sản phẩm trong đơn hàng quý khách vui lòng liên hệ Hasaki Care qua Hotline 1800 6324 để được hướng dẫn chi tiết.
+                                </p>
+                                <p>
+                                    Đơn hàng chỉ được hủy khi đơn hàng của quý khách chưa chuyển trạng thái cho đơn vị vận chuyển.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Phần cột ở cuối-->
+            <div style="padding: 0 15px;">
+                <div class="row1">
+                    <div class="col_3">
+                        <div class="menu_col_3">
+                            <div class="item_ques">
+                                <a href="#q1">
+                                    Tôi đã thanh toán đơn hàng bằng VNPay QR nhưng đã 3 ngày tôi vẫn chưa nhận được tiền hoàn cho đơn đã hủy?
+                                </a>
+                               
+                                <a href="#q2">
+                                    Đăng ký gian hàng trên Loship được miễn phí không?
+                                </a>
+
+                                <a href="#q3">
+                                    Tại sao tôi mua quảng cáo Thử quán mới nhưng vẫn chưa được hiển thị?
+                                </a>
+
+                                <a href="#q4">
+                                    Tôi muốn thay đổi hoặc hủy bỏ đơn hàng đã mua thì sao?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="chat">
+            <div id="panel">
+                <div class="background">
+                    <img src="/bt-giuaky/imgs/logo.jpg"/>
+                </div>
+                <div class="logo flex">
+                    <img src="/bt-giuaky/imgs/short icon.png"/>
+                    <h3 style="margin-left: 10px"><strong>Foodoo</strong></h3>
+                </div>
+                <div class="input-chat">
+                    <form>
+                        <textarea required placeholder="Nhắn tin cho Foodoo để chúng tôi giải đáp thắt mắc cho bạn." ></textarea>
+                        <div class="send-button">
+                            <button>Gửi</button>
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div>
+                    <div class="flex">
+                        <img style="width: 50px;" src="/bt-giuaky/imgs/cskh/mess.jpg"/>
+                        <p style="font-size: 10px; margin: 7px; ">Tin nhắn đã gửi cho Foodoo.vn và câu trả lời của họ sẽ hiển thị trong Messenger của bạn. </p>
+                    </div>
+                   
+                </div>
+            </div>
+            <div id="flip" >
+                <span style="margin-right: 10px;">Chat với chúng tôi</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buble">
+        <div class="buble-position">
+            <div id="id1">
+               <img title="Gửi tin nhắn ngay" src="/bt-giuaky/imgs/cskh/messenger.jpg"/>
+            </div>
+            <div id="id2">
+                <img title="Liên hệ ngay" src="/bt-giuaky/imgs/cskh/call.jpg"/>
+            </div>
+            <div id="id3">
+                <img title="Điền form ngay" src="/bt-giuaky/imgs/cskh/form.jpg"/>
+            </div>
+            <div id="id4">
+                <img title="Xem địa chỉ ngay" src="/bt-giuaky/imgs/cskh/map.jpg"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

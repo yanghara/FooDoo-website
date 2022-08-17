@@ -10,11 +10,6 @@ html {
     box-sizing: border-box;
 }
 
-@font-face {
-    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
-    font-family: newfont;
-}
-
 .flex {
     display: flex;
 }
@@ -93,7 +88,6 @@ header > div > img {
     transform: translateY(-50%);
     position:absolute;
     left: 20px;
-    cursor: pointer;
 }
 
 div.find > input{
@@ -165,6 +159,7 @@ ul.menu li a:hover {
     justify-content: space-between;
     width: 800px;
 }
+
 
 /*1.1giới thiệu cửa hàng*/
 
@@ -244,15 +239,14 @@ div.address {
     height: 1200px;
     flex-grow: 1;
     min-width: 160px;
-   
 }
 
 div.categorize {
-    border: 1px solid blue;
     width: 170px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
+    
 }
 
 div.categorize ul {
@@ -298,10 +292,31 @@ div.drink-food {
     position: relative;
 }
 
-div.img-width > img {
-    width: 120px;
+div.select {
+    display: flex;
 }
 
+/*div.select button {
+    padding: 5px;
+    background-color: antiquewhite;
+    height: 25px;
+    width: 50px;
+    line-height: 13px;
+}*/
+
+div.select > button, div.select > div {
+    margin-right: 10px;
+}
+
+div.img-width > img {
+    width: 120px; 
+    transition: width 1s;
+}
+
+
+div.img-width img:hover {
+    width: 170px;
+}
 
 div.drink-food div:nth-child(2) > div {
     margin-top: 10px;
@@ -310,11 +325,11 @@ div.drink-food div:nth-child(2) > div {
 
 div.drink-food span {
     position: absolute;
-     width:20px; 
+     width: 20px; 
      height: 20px; 
      right: 30px;
      top: 20px;
-     transition:all .3s;
+     /*transition:all .3s;*/
 }
 
 div.drink-food span:hover {
@@ -340,12 +355,13 @@ div.right {
 
 div.order {
     width: 350px;
-    height: 180px;
+    height: 300px;
 }
 
 div.popup {
     position: relative;
-    background-color: #f1e7e7;
+    background-color: #576F72;
+    color: #fff;
     border-radius: 10px;
     height: 40px;
     margin-bottom: 10px;
@@ -359,7 +375,7 @@ div.popup {
     left: 85%;
     border-style: solid;
     border-width: 8px;
-    border-color: rgb(67, 67, 67) transparent transparent rgb(67, 67, 67);
+    border-color: #576F72 transparent transparent #576F72;
 }
 
 div.popup a {
@@ -376,6 +392,7 @@ div.popup > span {
 
 div.box-order {
     background-color: #f1e7e7;
+    border-radius: 10px;;
 }
 
 div.box-head {
@@ -388,12 +405,22 @@ div.box-head div.group {
     border-radius: 10px;
     padding: 5px;
     display:inline-block;
-    background-color: #FCE2DB;
+    background-color: #1F4690;
     cursor: pointer;
-    width: 90px;
+    width: 70px;
     height: 39px;
     margin: auto;
     line-height: 28px;
+    text-align: center;
+}
+
+div.box-head div.group:hover {
+    background-color: #FFE5B4;
+    
+}
+
+div.box-head div.group a:hover {
+    color: #111 !important;
 }
 
 div.list-view-1 {
@@ -401,6 +428,7 @@ div.list-view-1 {
     text-align: center;
     margin: 0 10px 0 10px;
     border-bottom: 1px solid #000;
+    color: rgb(151, 151, 151);
 }
 
 div.list-view-2 {
@@ -408,17 +436,171 @@ div.list-view-2 {
     justify-content: space-between;
     padding: 10px;
 }
-.go {
+
+.cmt {
+    color: red;
+}
+
+/*thêm vào giỏ hàng*/
+
+span.add-to-cart {
+    font-size: 27px;
+   
+}
+
+span.add-to-cart i {
+    cursor:pointer;
+}
+
+/*chọn món, chọn size*/
+.page-confirm {
+    width: 550px;
+    height: 500px;
+    background-color: #f3b443;
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: block;
-    width: 100px;
-    padding: 0.5rem 0.5rem;
-    background-color:orange;
-    color: white;
+    top: 18%;
+    left: 30%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 200;
+}
+
+.background-confirm {
+    width: 550px;
+    position: relative;
+}
+
+div.arrow-left i {
+    font-size: 29px;
+    background-color: #f3b443;
+    color: #000;
+    margin: 2px 2px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+div.img-head img {
+    width: 185px;
+    margin: 5px 33%;
+}
+
+div.box-selection {
+    width: 550px;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+}
+
+div.name-product h3, label {
     text-align: center;
+    line-height: 44px;
+    height: 24px;
 }
-.go:hover {
-    color: white;
+
+div.box-selection > div:nth-child(even){
+    background: rgba(8, 0, 64, 0.04);
 }
+
+.label-size {
+    width: calc(100% + 30px);
+    /*background: rgba(8, 0, 64, 0.04);*/
+    margin: 15px 0px;
+    padding: 7px;    
+    margin-left: 41%;
+}
+
+.border-selection-size {
+    height: 60px;
+    background-color: #fff;
+}
+
+.selection-size {
+    height: 60px;
+    display: flex;
+    background-color: #fff;
+    padding: 15px;   
+    margin-left: 37%;
+}
+
+.selection-size div input {
+    overflow: hidden;
+    border: none;
+    width: 31px;
+    font-size: 20px;
+    height: 20px;
+    margin: 6px 5px 0 20px;
+}
+
+.selection-size > div:nth-child(odd) i
+{
+    font-size: 27px;
+}
+
+.selection-suga, .selection-ice, .selection-size-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.selection-size-1 > div{
+    padding: 7px 11px !important;
+}
+
+.selection-suga > div, .selection-ice > div, .selection-size-1 > div {
+    margin: 5px 10px;
+    padding: 5px;
+    border: 1px solid #111;
+    border-radius: 15px;
+}
+
+.selection-suga > div:hover,
+ .selection-ice > div:hover,
+ .selection-size-1 > div:hover {
+    background-color: #1F4690;
+    color: #fff;
+    cursor: pointer;
+}
+
+.afterClick {
+    background-color: #1F4690 !important;
+    color: #fff !important;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.foot-page-confirm {
+    width: 550px;
+    height: 42px;
+}
+
+.background-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width: 550px;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    background-color: #FFFDDE;
+    color: #000;
+}
+
+.background-footer > div:first-child {
+    margin: 9px 7px;
+}
+
+.background-footer > div:last-child{
+    background-color: #f3b443;
+    border-radius: 15px 0 0 15px;
+    padding: 7px;
+    margin-right: 2%;
+}
+
+div.payment {
+    cursor: pointer;
+}
+
+

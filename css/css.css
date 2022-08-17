@@ -450,11 +450,23 @@ div.fighter {
     text-align: center;
 }
 
+.fullscreen {
+    border-radius: 0;
+    height: 100%;
+    left: 0;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    transform: none!important;
+    width: 100%!important;
+    display: none;
+}
+
 .bonus {
     left: 50%;
     position: fixed;
     top: 50%;
-    z-index: 200;   
+    z-index: 300;   
     position: inherit;
     background-color: #ffd;
     position: absolute;
@@ -462,8 +474,10 @@ div.fighter {
     border: 2px solid var(--bg);
     border-radius: 8px;
     width: 500px;
-    height: 450px;
-    display: none;
+    height: 530px;
+}
+.foodooform {
+    width: 100%;
 }
 .foodooform p{
     text-align: center;
@@ -507,22 +521,19 @@ input {
 .num {
     display: flex;
 }
-.bigger {
-    
-    position: inherit;
-    width: 500px;
-    height: 450px;
-    position: absolute;
-    visibility: hidden;
-}
 .go {
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    right: 10px;
     display: block;
     width: 100px;
     padding: 0.5rem 0.5rem;
     background-color:orange;
     color: white;
+    z-index: 200;
     text-align: center;
+}
+img.headImg{
+    width: 130px;
+    margin: 5px 33%;
 }

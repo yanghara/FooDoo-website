@@ -1,74 +1,372 @@
-.nav-bar {
-    height: 65px;
+html {
+    scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Roboto-M;
+    src: url(/bt-giuaky/font/Roboto-M.ttf);
+}
+
+
+:root{
+    --width:80%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.add {
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
-    background-color:#fff4fe;
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* phần dùng chung cho cả trang web*/
+
+header.flex {
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color:black;
-    font-size: 20px;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
-div.container {
-    display: flex;
-    align-items: center;
+a:hover {
+    color: red;
 }
 
-div.container img {
-    width: 200px;
-    height: 65px;
+body {
+    font-size: 17px;
 }
 
-div.container a:last-child {
-    border: 1px solid #000;
-    padding: 10px;
+div.flex {
+    margin: auto;
+}
+
+
+/*phần nav đầu tiên của body*/
+
+nav {
+    background-color: #F7E2E2;
+    height: 45px;
+    color: #180A0A;
+}
+
+nav.flex div.flex {
+    margin: auto;
+}
+
+nav.flex div.flex ul li {
+    margin-left: 20px;
+}
+
+nav.flex div.flex ul li a:hover {
+    color: red;
+}
+
+/*Phần header cho market*/
+header {
+    background-color:#f1e7e7;
+    font-size: 18px;
+    position:relative;
+}
+
+header > div > img {
+    width: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    left: 20px;
+}
+
+div.find > input{
+    width:500px;
+    font-size:20px;
+}
+
+.find > input{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px;
+    border: 1px dotted white;
+}
+
+ul.menu li {
+    
+    border: 1px solid beige;
+    background-color: beige;
     border-radius: 15px;
+    margin: 3px;
+}
+
+ul.menu li a {
+    display: block;
+    padding:10px;
+}
+
+ul.menu li a:hover {
+    background-color: darkblue;
+    color:white;
+    border-radius: 15px;
+    
+}
+
+/*Phần banner*/
+
+div {
+    display: block;
+}
+
+.banner {
+    height: 210px;
 
 }
 
-div.container a:last-child:hover {
-    background-color: bisque;
-}
-
-div.top-banner {
-    height: 150px;
-}
-
-div.top-banner {
+.container {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
 }
 
-div.greeting {
+.subbanner {
+    background: #477d65 url(/bt-giuaky/imgs/cskh/background.jpg) no-repeat center top;
+    height: 210px;
+    padding-top: 40px;
+}
+
+div.subbanner h1 {
+    text-align: center;
+    color: white;
+    font-size: 24px !important;
+    margin: 0 0 15px;
+}
+
+div.input {
+    text-align: center !important;
+}
+
+.input input {
+    height: 45px;
+    width: 700px;
+    border-radius: 30px;
+    border-width: 1.5px;
+    padding: 5px 10px;
+    font-size: 16px !important;
+}
+
+.input button {
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border-width: 1.5px;
+}
+
+.flex-center {
     display: flex;
-    align-items: center;
+    text-align: center;
 }
-   
-div.greeting h1 {
-    margin-left: 10%;
-}
-
-div.greeting img {
-    margin-left: 40%;
-    padding: 15px;
+.contact {
+    height: 28px;
+    width: 700px;
+    margin-top: 8px;
 }
 
-div.search-box {
-    width: 750px;
-    height: 81px;
-    position: absolute;
-    top: calc(100% + 40px);
-    left: calc(50% + 24px);
-    background-color: aqua;
+/*phần body của trang*/
 
+div.container {
+    background-color: #fff;
 }
 
-div.search-box div.input {
+.main_menu {
+    width: 930px;
+    height: 900px;
     padding: 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    margin-right: 30px;
+    display: flex;
+}
+
+div.breakcrumb {
+    padding: 10px 0;
+    background-color: #d6dbd9;
+    margin-bottom: 10px;
+}
+
+div.col_1 {
+    width: 170px;
+}
+
+div.menu_col_1 div {
+    margin: 4px;
+    padding:5px;
+}
+
+div.support_col_1 {
+    width: 190px;
+}
+
+div.item_menu_support {
+    position: relative;
+    padding-bottom: 5px;
+    margin: 5px 0 10px 0;
+}
+
+div.item_menu_support a {
+    margin-left: 10px;
+}
+
+div.item_menu_support::before {
+    content: " ";
+    height: 5px;
+    width: 5px;
+    background: #111;
+    left: 0;
+    top: 7px;
+    position: absolute;
+}
+
+div.col_2 {
+    width: 685px;
+    border-left: 1px solid #111;
+    border-right: 1px solid #111;
+    padding-right: 5px;
+}
+
+div.menu_col_2 {
+    padding: 10px 0 0 10px;
+}
+
+div p {
+    margin-top: 10px;  
+}
+
+div.content {
+    margin-left: 30px;
+    border-bottom: 1px solid rgb(189, 188, 188);
+    margin-bottom: 30px;
+}
+
+div.item2 {
+    font-size: 20px !important;
+}
+
+div.col_3 {
+    width: 275px;
+}
+
+div.item_ques a {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div.item_ques {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #326e51;
+    color: #fff;
+    width: 230px;
+    height: 33px;
+    position: fixed;
+    bottom: 0;
+    left: 80%;
+  }
+  
+  #panel {
+    border: solid 1px #111;
+    padding: 5px;
+    width: 230px;
+    height: 410px;
+    display: none;
+    background-color: #FCF8E8;
+    color: #111;
+    position: fixed;
+    bottom: 0;
+    left: 80%;
+  }
+
+div.background, div.logo {
+    width: 100%;
+}
+
+.background img, .logo img {
+    width: 100%;
+}
+
+div.background {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+ 
+.logo img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.input-chat textarea {
+    width: 210px;
+    height: 120px;
+    margin: 15px 0 0 5px;
+    padding: 5px;
+    resize: none;
+    overflow: hidden;
+}
+
+div.send-button {
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+div.buble div {
+    margin: 8px;
+    padding: 4px;
+
+}
+
+/*div.buble div:hover {
+    right: 1%;
+}*/
+
+div.buble img {
+    width: 54px;
+    position: relative;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+div.buble-position {
+    position: fixed;
+    right: -3%;
+    top: 40%;
+}
+
+div.buble-position img:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    
 }

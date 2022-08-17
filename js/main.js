@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $(".button ").click(function(){
-        $(".bonus").show()
+        $(".fullscreen").show()
     });
     $("#exit").click(function(){
-        $(".bonus").hide()
+        $(".fullscreen").hide()
     });
     $("#share").click(function(){
         location.replace("https://www.facebook.com/")
@@ -11,6 +11,7 @@ $(document).ready(function(){
     $(".bForm").click(function(){
         alert("Đặt hàng thành công");
     })
+
 });
 function DK(){
     if (confirm("BẠN ĐÃ CHẮC CHẮN CHƯA?")==true) {
