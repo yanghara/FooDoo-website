@@ -26,5 +26,8 @@ function init(){
     
 
 }
+function back() {
+  location.href ="index.html"
+}
 
 

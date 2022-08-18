@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chăm sóc khách hàng</title>
-
-    <link rel="stylesheet" href="/bt-giuaky/css/cskh.css"/>
+    <link href="./images/logo.jpg" rel="shortcut icon"/>
+    <link rel="stylesheet" href="./css/cskh.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/bt-giuaky/js/script_cskh.js"></script>
+    <script src="./js/script_cskh.js"></script>
 
 </head>
 <body onload="init()">
@@ -18,7 +18,7 @@
         <div class="flex">
 
             <ul class="flex">
-                <li><a href="#">  
+                <li><a href="https://www.apple.com/app-store/">  
                     Tải ứng dụng Foodoo
                     <button>IOS</button>
                     <button>Android</button></a></li>
@@ -33,7 +33,7 @@
 
     <header class="flex">
         <div>
-            <img src="imgs/logo.jpg" alt="logo"/>
+            <img onclick="back()" src="./imgs/logo.jpg" alt="logo"/>
         </div>
 
         <div class="flex"> 
@@ -45,9 +45,9 @@
 
         <div>
             <ul class="menu flex">
-                <li><a href="#">Đăng nhập</a></li>
-                <li><a href="#">Đăng ký</a></li>
-                <li><a href="#">Hỗ trợ</a></li>
+                <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
+                <li><a href="https://www.facebook.com/">Đăng ký</a></li>
+                <li><a href="cskh.html">Hỗ trợ</a></li>
             </ul>
         </div>
     </header>
@@ -106,9 +106,9 @@
     <!--Phần body của trang-->
     <div class="container" >
         <div class="breakcrumb">
-            <a href="#">Trang chủ</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
-            <a href="#">Đặt món</a>
+            <a href="index.html">Trang chủ</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="product.html">Đặt món</a>
         </div>
 
         <div class="main_menu">
@@ -278,10 +278,10 @@
         <div class="chat">
             <div id="panel">
                 <div class="background">
-                    <img src="/bt-giuaky/imgs/logo.jpg"/>
+                    <img src="./imgs/logo.jpg"/>
                 </div>
                 <div class="logo flex">
-                    <img src="/bt-giuaky/imgs/short icon.png"/>
+                    <img src="./imgs/short icon.png"/>
                     <h3 style="margin-left: 10px"><strong>Foodoo</strong></h3>
                 </div>
                 <div class="input-chat">
@@ -296,7 +296,7 @@
 
                 <div>
                     <div class="flex">
-                        <img style="width: 50px;" src="/bt-giuaky/imgs/cskh/mess.jpg"/>
+                        <img style="width: 50px;" src="./imgs/cskh/mess.jpg"/>
                         <p style="font-size: 10px; margin: 7px; ">Tin nhắn đã gửi cho Foodoo.vn và câu trả lời của họ sẽ hiển thị trong Messenger của bạn. </p>
                     </div>
                    
@@ -313,18 +313,76 @@
     <div class="buble">
         <div class="buble-position">
             <div id="id1">
-               <img title="Gửi tin nhắn ngay" src="/bt-giuaky/imgs/cskh/messenger.jpg"/>
+               <img title="Gửi tin nhắn ngay" src="./imgs/cskh/messenger.jpg"/>
             </div>
             <div id="id2">
-                <img title="Liên hệ ngay" src="/bt-giuaky/imgs/cskh/call.jpg"/>
+                <img title="Liên hệ ngay" src="./imgs/cskh/call.jpg"/>
             </div>
             <div id="id3">
-                <img title="Điền form ngay" src="/bt-giuaky/imgs/cskh/form.jpg"/>
+                <img title="Điền form ngay" src="./imgs/cskh/form.jpg"/>
             </div>
             <div id="id4">
-                <img title="Xem địa chỉ ngay" src="/bt-giuaky/imgs/cskh/map.jpg"/>
+                <img title="Xem địa chỉ ngay" src="/imgs/cskh/map.jpg"/>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+<div class="col main">
+<img class="logo" src="./images/foodoo.png" alt="logo_foodoo"/>
+<h2 class="subfoot">Trường Đại học Mở TP Hồ Chí Minh </h2>
+<div class="social">
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/"><img src="./images/fb.jpg"/></a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/"><img src="./images/ube.png"/></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/"><img src="./images/wi.webp"/></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/"><img src="./images/in.png"/></a>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="col contact">
+<h2 class="subfoot">CONTRACT INFO</h2>
+<div class="contact">
+<div class="info">
+    <div class="infoimg">
+        <img src="./images/placeholder.svg"/>
+    </div>
+    <span>371 Nguyễn Kiệm, phường 3, quận Gò Vấp, TP HCM </span>
+</div>
+<div class="info">
+    <div class="infoimg">
+        <img src="./images/message.svg"/>
+    </div>
+    <span>1800 5858 84</span>
+</div>
+<div class="info">
+    <div class="infoimg">
+        <img src="./images/phone-call.svg"/>
+    </div>
+    <span>quanlydaotao@ou.edu.vn</span>
+</div>
+<div class="info">
+    <div class="infoimg">
+        <img src="./images/placeholder.svg"/>
+    </div>
+    <span>https://ou.edu.vn</span>
+</div>
+</div>
+</div>
+
+</div> 
+            </div>
+        </div>
+    <span class="copyright">"Copyright &copy; 2022 By "<a href="#">Hồ Thanh Thúy</a> and <a href="#">Nguyễn Thị Mỹ Vân </a></span>
+    </footer>
 </body>
 </html>

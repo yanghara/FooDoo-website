@@ -12,6 +12,24 @@
     src: url(../fonts/DancingScript-VariableFont_wght.ttf);
     font-family: newfont;
 }
+@font-face{
+    src: url(./fonts/Roboto-M.ttf);
+    font-family: roboto;
+}
+@keyframes changepro {
+    0% {
+        color: rgb(179, 97, 97);
+    }
+    25% {
+        color: rgb(194, 105, 104);
+    }
+    75% {
+        color:rgb(199, 93, 93);
+    }
+    100% {
+        color: rgb(212, 99, 99);
+    }
+}
 div {
     display: block;
 }
@@ -59,6 +77,7 @@ h1 {
     color:red;
     text-transform: capitalize;
     font-size: 32px;
+    font-family:roboto ;
 }
 .content {
     color: #333;
@@ -78,7 +97,7 @@ h1 {
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
-
+    font-family: newfont;
 }
 .row1 h3 {
     color: #e0132b;
@@ -105,6 +124,7 @@ h1 {
     text-transform: capitalize;
     font-size: 32px;
     margin: 0 0 15px 0;
+    font-family: newfont;
 }
 p {
     margin: 0 0 10px;
@@ -147,6 +167,7 @@ input {
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
+    font-family: newfont;
 }
 .location {
     font-weight: 500;
@@ -154,7 +175,7 @@ input {
 }
 .location i
 {
-    color: rgb(179, 97, 97);
+    animation: changepro 2s infinite;
 }
 footer 
 {
