@@ -66,11 +66,11 @@ div.flex {
 }
 
 header ul.menu li {
-    
     border: 1px solid beige;
     background-color: beige;
     border-radius: 15px;
     margin: 3px;
+    padding: 5px;
 }
 
 header ul.menu li a {
@@ -85,13 +85,7 @@ header ul.menu li a:hover {
     
 }
 /*...*/
-div.ads img {
-    width: 500px;
-    display: block;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-}
+
 /*footer*/
 footer 
 {
@@ -262,6 +256,7 @@ div.product > div {
     background-color: var(--bg);
     position: relative;
     overflow: hidden;
+    height: 350px;
 }
 div.product img {
     width: 100%;
@@ -273,13 +268,15 @@ div.product img:hover {
 }
 .button
 {
-    margin: auto;
+    
+    margin: 0 auto;
     display: block;
     background-color: var(--bg);
     border: 1px solid #333;
     border-radius: 5px;
     padding: 10px 10px;
     cursor:pointer;
+
 }
 @keyframes doimau {
     0% {
@@ -337,6 +334,7 @@ div.new > div {
     position: relative;
     overflow: hidden;
     background: linear-gradient(var(--bg),#f5ecf5,var(--bg));
+    height: 370px;
 }
 div.new img {
     width: 100%;
@@ -372,6 +370,7 @@ div.market > div {
     padding: 10px;
     position: relative;
     overflow: hidden;
+    height: 300px;
 }
 div.market  img {
     border-radius: 8px;

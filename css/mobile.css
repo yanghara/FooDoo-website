@@ -1,0 +1,47 @@
+@media screen and (max-width: 1023px) {
+    div.product {
+        width: 33.33%;
+    }
+    div.new {
+        width: 33.33%;
+    }
+    .promotion {
+        display: none;
+    }
+    div.news >.new:last-child 
+    {
+        display: none;
+    }
+    div.market{
+        width: 50%;
+    }
+    #del {
+        display: none;
+    }
+    .viewall {
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    nav.flex {
+        display: none;
+    }
+    header > div > img {
+        width: 100px;
+    }
+    div.find > input{
+        width:230px;
+        font-size:15px;
+    }
+    li.link:nth-child(3),  li.link:nth-child(4), li.link:nth-child(5){
+        display: none;
+    }
+    h2.resp  li
+    {
+        display: none !important;
+        position: absolute;
+    }
+    h2.resp:hover  li{
+        display: block !important;
+
+    }
+}
