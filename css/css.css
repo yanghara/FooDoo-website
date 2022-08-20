@@ -196,7 +196,6 @@ ul.menu
 {
     color: red;
 }
-
 li.link
 {
     padding: 0 20px;
@@ -280,16 +279,16 @@ div.product img:hover {
 }
 @keyframes doimau {
     0% {
-      background-color: gold;
+      background-color: #b2b2b2;
     }
     25% {
-      background-color: aquamarine;
+      background-color: #eeb8c5;
     }
     75% {
-      background-color: cadetblue;
+      background-color: #dcdbd9;
     }
     100% {
-      background-color: blue;
+      background-color: #cae7e3;
     }
 }
 @keyframes changepro {
@@ -398,7 +397,6 @@ div.promot >i{
 }
 div.title {
     align-items: center;
-    display: flex;
     position: relative;
     text-transform: uppercase;
     padding: 7px 10px 7px;
@@ -416,7 +414,6 @@ div.fighter {
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0 2px 4px #00000012;
-    display: flex;
     overflow: hidden;
     padding: 15px 25px;
     position: relative;
@@ -473,7 +470,7 @@ div.fighter {
     border: 2px solid var(--bg);
     border-radius: 8px;
     width: 500px;
-    height: 530px;
+    height: 450px;
 }
 .foodooform {
     width: 100%;
@@ -501,6 +498,12 @@ input {
     
 }
 
+select.voucher{
+    margin: 0 15px 0 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
 #exit {
     font-size: 20px;
     padding: 5px;
@@ -520,6 +523,12 @@ input {
 .num {
     display: flex;
 }
+.num > input[type=number]{
+    margin: 0 10px 0 10px;
+}
+p.pp {
+    margin: 45px 0 10px;
+}
 .go {
     position: fixed;
     bottom: 10px;
@@ -532,7 +541,4 @@ input {
     z-index: 200;
     text-align: center;
 }
-img.headImg{
-    width: 130px;
-    margin: 5px 33%;
-}
+

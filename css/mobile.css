@@ -35,13 +35,32 @@
     li.link:nth-child(3),  li.link:nth-child(4), li.link:nth-child(5){
         display: none;
     }
-    h2.resp  li
-    {
-        display: none !important;
-        position: absolute;
+    .v-menu {
+        margin-top: 300px;
     }
-    h2.resp:hover  li{
-        display: block !important;
-
+    header ul.menu li a {
+        padding: 0;
+    }
+    li.link{
+        padding: 0 30px;
+    }
+    h2.subject {
+        text-align: center;
+    }
+    .download {
+        margin: 0 300px;
+    }
+    .main, .contact {
+        margin: 0 15px;
+    }
+    .bonus{
+        width: 300px;
+        height:400px;
+    }
+    .voucher{
+        display: none;
+    }
+    div.title {
+        text-align: center;
     }
 }

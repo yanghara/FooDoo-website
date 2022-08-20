@@ -1,0 +1,253 @@
+/*phần cả bài*/
+:root {
+    --bg:#f1e7e7;
+    --width:80%
+}
+*
+{  
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+@keyframes doimau{
+    0% {
+        color: rgb(224, 202, 75);
+    }
+    25% {
+        color: rgb(250, 158, 27);
+    }
+    75% {
+        color:#add325
+    }
+    100% {
+        color: #bdba2d;
+    }
+}
+/*...*/
+a
+{
+    color: #333;
+    text-decoration: none;
+} 
+.flex {
+    display: flex;
+    
+}
+/*header*/
+nav {
+    background-color: #F7E2E2;
+    height: 60px;
+    color: #180A0A;
+}
+
+nav.flex div.flex ul li {
+    margin-left: 20px;
+}
+
+nav.flex div.flex ul li a:hover {
+    color: red;
+}
+
+/*phần header trong body*/
+
+header {
+    background-color:#f1e7e7;
+    font-size: 18px;
+    position:relative;
+}
+
+header > div > img {
+    width: 150px;
+    top:50%;
+    transform: translateY(-50%);
+    position:absolute;
+    left: 20px;
+}
+
+div.find > input{
+    width:500px;
+    font-size:20px;
+}
+
+.find > input{
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px 10px;
+    border: 1px dotted white;
+}
+
+div.flex {
+    margin: auto;
+}
+
+header ul.menu li {
+    border: 1px solid beige;
+    background-color: beige;
+    border-radius: 15px;
+    margin: 3px;
+    padding: 5px;
+}
+
+header ul.menu li a {
+    display: block;
+    padding:10px;
+}
+
+header ul.menu li a:hover {
+    background-color: darkblue;
+    color:white;
+    border-radius: 15px;
+    
+}
+/*...*/
+
+/*footer*/
+footer 
+{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: var(--bg) ;
+}
+
+.info span:hover
+{
+    color: #fa9e1b;
+}
+.copyright
+{  
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    color: #e8a0bf;
+    font-weight: 700;
+}
+.copyright a
+{  
+    color: rgb(201, 102, 148);;
+}
+ul 
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.social img
+{
+    width: 30px;
+    margin-right: 3em;
+}
+img.logo
+{
+    width: 10em;
+}
+.infoimg img
+{
+   display: block;
+   max-width: 100%;
+   width: 20px;
+   margin-right: 10px;
+}
+.info
+{
+    display: flex;
+    align-items: center;   
+    margin-bottom: 10px;    
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px; 
+    margin-right: -4px;
+    justify-content: space-between;
+}
+a.download
+{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    font-size: 0;
+    height: 35px;
+    width: 20px;
+
+}
+/*...*/
+.go {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color:orange;
+    color: white;
+    z-index: 200;
+    text-align: center;
+    border-radius: 60px;
+}
+.none {
+    width: 10%;
+   
+}
+.now {
+    width: 80%;
+}
+.search {
+    display: flex;
+    background-color: #fff;
+    border: #180A0A;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.chip {
+    margin: 10px;
+    padding: 10px 5px;
+    border: 0.5px double red;
+    border-radius:5px ;
+    background-color: #fff;
+    cursor: pointer;
+}
+select {
+    background-color: #fff;
+    padding: 10px 5px;
+    margin: 10px;
+    padding: 10px 5px;
+    border: 0.5px double red;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+div.pro {
+    width: 25%;
+    padding: 5px;
+    cursor: pointer;
+}
+div.pro img {
+    width: 100%;
+}
+div.pro > div {
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--bg);
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+.note {
+    padding: 10px;
+    text-align: center;
+}
+#lo {
+    padding-right: 5px;
+    animation: doimau 2s infinite;
+}
