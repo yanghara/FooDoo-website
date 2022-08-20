@@ -1,4 +1,6 @@
-let names = ['Cà phê phin nóng', 'Trà sữa thái']
+let names = ['Cà phê phin nóng', 'Trà sữa thái', `Trà`, `Cà phê phin đá`, `Espresso`, `Milo đá`, `Milo hộp`,
+`Mì trộn xúc xích trứng chiên`, `Bánh bao trứng cút`, `Mì trộn Indomie`, `Bánh giò`, `DimSum`, `Bánh mì ốp la`
+]
 
 function init() {
     let m = document.getElementById("mainImg1");
@@ -6,7 +8,7 @@ function init() {
     for (let bnt of buttons){
         bnt.addEventListener("click", function() {
             let prefix = bnt.getAttribute("rel");
-                m.src=`./imgs/circlek/drink2${prefix}.png`
+                m.src=`/bt-giuaky/imgs/circlek/drink2${prefix}.png`
 
         })
     }
@@ -16,7 +18,7 @@ function init() {
     for (let bnt1 of buttons1){
         bnt1.addEventListener("click", function() {
             let prefix1 = bnt1.getAttribute("rel");
-                m1.src=`./imgs/circlek/drink3${prefix1}.png`
+                m1.src=`/bt-giuaky/imgs/circlek/drink3${prefix1}.png`
         })
     }
 
@@ -25,7 +27,7 @@ function init() {
     for (let bnt2 of buttons2){
         bnt2.addEventListener("click", function() {
             let prefix2 = bnt2.getAttribute("rel");
-                m2.src=`./imgs/circlek/drink4${prefix2}.png`
+                m2.src=`/bt-giuaky/imgs/circlek/drink4${prefix2}.png`
         })
     }
 
@@ -34,11 +36,40 @@ function init() {
     for (let bnt3 of buttons3){
         bnt3.addEventListener("click", function() {
             let prefix3 = bnt3.getAttribute("rel");
-                m3.src=`./imgs/circlek/drink6${prefix3}.png`
+                m3.src=`/bt-giuaky/imgs/circlek/drink6${prefix3}.png`
         })
     }
 
+    let m4 = document.getElementById("mainImg5");
+    let buttons5 = document.querySelectorAll(".bnt6 > input")
+    for (let bnt6 of buttons5){
+        bnt5.addEventListener("click", function() {
+            m4.src=`/bt-giuaky/imgs/circlek/drink1.png`
+        })
+    }
+
+    let m5 = document.getElementById("mainImg6");
+    let buttons6 = document.querySelectorAll(".bnt7 > input")
+    for (let bnt7 of buttons6){
+        bnt7.addEventListener("click", function() {
+            m5.src=`/bt-giuaky/imgs/circlek/drink7.png`
+        })
+    }
+
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 21) {
+        greeting = "Đang mở cửa";
+    } else if (time < 22) {
+        greeting = "Sắp đóng cửa";
+    } else {
+        greeting = "Đã đóng cửa";
+    }
+    document.getElementById("hour").innerHTML = greeting;
+
     $(document).ready(function(){
+        $(".page-confirm").hide();
+
         $("#cmt").click(function(){
             alert("Đã thêm vào cửa hảng yêu thích của bạn!")
             $("#cmt").addClass("cmt")
@@ -82,53 +113,98 @@ function init() {
             $(this).addClass("afterClick");
         })
 
-        /*chọn mỗi giỏ hàng, đổi ảnh đại diện sản phẩm đó*/
+        /*chọn mỗi giỏ hàng, đổi ảnh đại diện, đổi tên sản phẩm đó*/
 
         $("#1").click(function(){
-
             $("#title-img").attr("src", m.src);
+            $("#title-name").text("Cà phê phin nóng");
         })
 
         $("#2").click(function(){
             $("#title-img").attr("src", m1.src);
+            $("#title-name").text("Trà sữa thái");
         })
 
         $("#3").click(function(){
             $("#title-img").attr("src", m2.src);
+            $("#title-name").text("Trà");
         })
 
         $("#4").click(function(){
             $("#title-img").attr("src", m3.src);
+            $("#title-name").text("Cà phê phin đá");
         })
 
-        /*chọn mỗi giỏ hàng, đổi tên sản phẩm*/
-
-        $("#1").click(function(){
-            let t = document.getElementById("name1");
-            $("#title-name").innerHTML="Cà phê phin nóng";
+        $("#5").click(function(){
+            $("#title-img").attr("src", m4.src);
+            $("#title-name").text("Espresso");
         })
 
-        $("#2").click(function(){
-            $("#title-name").hide();
-            let t1 = document.getElementById("name2");
-            $("#title-name").innerHTML="Trà sữa thái";
-            $("#title-name").show();
+        $("#6").click(function(){
+            $("#title-img").attr("src", m5.src);
+            $("#title-name").text("Milo");
         })
 
-        $("#3").click(function(){
-            $("#title-name").hide();
-            let t2 = document.getElementById("name3");
-            $("#title-name").replaceWith(t2);
+        /*Tính giá tiền*/
+
+        $("#1, #3, #5").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("15.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("20.000VND")
+            })
         })
 
-        $("#4").click(function(){
-            let t3 = document.getElementById("name4");
-            $("#title-name").replaceWith(t3);
+        $("#2, #4").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("15.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("18.000VND")
+            })
         })
 
+        $("#6").click(function(){
+            $("#sizeM").click(function(){
+                $("#sum").text("17.000VND")
+            })
+            $("#sizeL").click(function(){
+                $("#sum").text("20.000VND")
+            })
+        })
 
+        /*Gợi ý tìm đồ ăn, nước uống*/
+
+        $("#foodname").keyup(function(){
+            let txt = $(this).val().toLowerCase();
+
+            let h = '';
+            for(let n of names)
+                if(n.toLowerCase().indexOf(txt) >= 0){
+                    h += `
+                    <li><a href="#">${n}</a></li>`;
+            }
+
+            if (h !== ''){}
+            $("#findfood").html(h);
+        })
+
+        $("#findfood").on("click", "a", function(){
+            $("#foodname").val($(this).text());
+        })
+        
+        /*Click thêm vào giỏ hàng*/
+
+        $("div.payment").click(function(){
+            $(".page-confirm").hide("slow", function(){
+                alert("Đã thêm vào giỏ hàng!");
+            });
+        })
+
+        
     })
 }
-function back() {
-    location.href ="index.html"
+function back(){
+    location.href = "index.html";
 }

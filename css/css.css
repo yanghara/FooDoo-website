@@ -470,7 +470,7 @@ div.fighter {
     border: 2px solid var(--bg);
     border-radius: 8px;
     width: 500px;
-    height: 450px;
+    height: 565px;
 }
 .foodooform {
     width: 100%;
@@ -527,7 +527,7 @@ select.voucher{
     margin: 0 10px 0 10px;
 }
 p.pp {
-    margin: 45px 0 10px;
+    margin: 20px 0 10px;
 }
 .go {
     position: fixed;
@@ -540,5 +540,18 @@ p.pp {
     color: white;
     z-index: 200;
     text-align: center;
+}
+#title-img{
+    width: 150px;
+    height: 140px;
+    margin: 0 165px;
+}
+.img-head {
+    background-color: #f4cfdf;
+}
+#title-name {
+    font-weight: 600;
+    font-family: roboto;
+    font-size: large;
 }
 

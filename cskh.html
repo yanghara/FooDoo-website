@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Đồ ăn, nước uống, ăn vặt, mua sắm">
+    <meta name="description" content="Đặt đồ ăn" />
+    <meta http-equiv="refresh"content="1800" />     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chăm sóc khách hàng</title>
+
     <link href="./images/logo.jpg" rel="shortcut icon"/>
     <link rel="stylesheet" href="./css/cskh.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/script_cskh.js"></script>
+    <style>
+        @font-face {
+            font-family: Roboto-M;
+            src: url(./fonts/Roboto-M.ttf);
+        }
+
+    </style>
 
 </head>
 <body onload="init()">
@@ -18,14 +29,14 @@
         <div class="flex">
 
             <ul class="flex">
-                <li><a href="https://www.apple.com/app-store/">  
+                <li><a href="#download">  
                     Tải ứng dụng Foodoo
                     <button>IOS</button>
                     <button>Android</button></a></li>
-                <li><a href="#">Đặt giao hàng</a></li>
-                <li><a href="#">Đi chợ cùng Foodoo</a></li>
-                <li><a href="#">Chăm sóc khách hàng</a></li>
-                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="bonus.html">Đặt giao hàng</a></li>
+                <li><a href="bonus.html">Đi chợ cùng Foodoo</a></li>
+                <li><a href="cskh.html">Chăm sóc khách hàng</a></li><!--cskh-->
+                <li><a href="cskh.html">Câu hỏi thường gặp</a></li><!--cskh-->
             </ul>
 
         </div>
@@ -33,7 +44,7 @@
 
     <header class="flex">
         <div>
-            <img onclick="back()" src="./imgs/logo.jpg" alt="logo"/>
+            <img onclick="back()" src="imgs/logo.jpg" alt="logo"/>
         </div>
 
         <div class="flex"> 
@@ -47,7 +58,7 @@
             <ul class="menu flex">
                 <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
                 <li><a href="https://www.facebook.com/">Đăng ký</a></li>
-                <li><a href="cskh.html">Hỗ trợ</a></li>
+                <li><a href="cskh.html">Hỗ trợ</a></li> <!--cskh-->
             </ul>
         </div>
     </header>
@@ -55,7 +66,7 @@
     <!--Phần banner-->
     <div class="banner" style="margin-bottom: 20px;">
         <div class="container">
-            <div class="subbanner">
+            <div class="subbanner" style="background-image: url(./imgs/cskh/background.jpg) ;">
                 <h1>Xin chào! Chúng tôi có thể giúp gì cho bạn?</h1>
                 <div>
                     <div class="input">
@@ -107,7 +118,7 @@
     <div class="container" >
         <div class="breakcrumb">
             <a href="index.html">Trang chủ</a>
-            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"><i class="fa-solid fa-angle-right"></i></a>
             <a href="product.html">Đặt món</a>
         </div>
 
@@ -190,21 +201,21 @@
                             </div>
                             <div class="content">
                                 <p>
-                                    Nếu quý khách chưa nhận được tiền hoàn vui lòng cung cấp số điện thoại đặt hàng qua fanpage Loship  hoặc email: hotroloship@lozi.vn để Loship cung cấp chứng từ đã hoàn trả cho giao dịch.
+                                    Nếu quý khách chưa nhận được tiền hoàn vui lòng cung cấp số điện thoại đặt hàng qua fanpage Foodoo  hoặc email: foodoo.vn để Foodoo cung cấp chứng từ đã hoàn trả cho giao dịch.
                                 </p>
                                 <p>
-                                    Trong trường hợp, quý khách chưa thể đối soát được giao dịch với ngân hàng thẻ, Loship sẽ chuyển thông tin đến cổng thanh toán để đối chiếu với ngân hàng. Loship sẽ phản hồi ngay khi ngân hàng cung cấp đủ thông tin yêu cầu từ quý khách. Do phụ thuộc vào thời gian xử lý của ngân hàng, Loship rất mong quý khách có thể chờ phản hồi sau khi báo cáo.
+                                    Trong trường hợp, quý khách chưa thể đối soát được giao dịch với ngân hàng thẻ, Foodoo sẽ chuyển thông tin đến cổng thanh toán để đối chiếu với ngân hàng. Foodoo sẽ phản hồi ngay khi ngân hàng cung cấp đủ thông tin yêu cầu từ quý khách. Do phụ thuộc vào thời gian xử lý của ngân hàng, Foodoo rất mong quý khách có thể chờ phản hồi sau khi báo cáo.
                                 </p>
                             </div>
 
                             <div class="item2">
                                 <a href="#" id="q2">
-                                    <strong>Đăng ký gian hàng trên Loship được miễn phí không?</strong>
+                                    <strong>Đăng ký gian hàng trên Foodoo được miễn phí không?</strong>
                                 </a>
                             </div>
                             <div class="content">
                                 <p>
-                                    Loship có thu phí đăng ký mở tài khoản & cửa hàng từ ngày 01/06/2022. Tuỳ vào khu vực, mức thu phí sẽ khác nhau:
+                                    Foodoo có thu phí đăng ký mở tài khoản & cửa hàng từ ngày 01/06/2022. Tuỳ vào khu vực, mức thu phí sẽ khác nhau:
                                     <ul >
                                         <li style="list-style-type:circle;">Hồ Chí Minh – Hà Nội – Cần Thơ – Quảng Ninh – Hải Phòng: 550,000.</li>
                                         <li style="list-style-type:circle;">Đà Nẵng: 1,000,000.</li>
@@ -224,7 +235,7 @@
                             </div>
                             <div class="content">
                                 <p>
-                                    Khi hoàn tất thanh toán thành công thì gói quảng cáo Thử quán mới sẽ được kích hoạt và hiển thị trong mục Thử quán mới trên ứng dụng Loship. Ngoài ra, nếu quán không hiển thị có thể do menu đang tắt món, cửa hàng đang tắt nhận đơn hoặc những vấn đề khác. Liên hệ Hỗ trợ cửa hàng Loship hotline 0792160460 (zalo) để được hỗ trợ và kiểm tra độ hiển thị của quán nhanh nhất.
+                                    Khi hoàn tất thanh toán thành công thì gói quảng cáo Thử quán mới sẽ được kích hoạt và hiển thị trong mục Thử quán mới trên ứng dụng Foodoo. Ngoài ra, nếu quán không hiển thị có thể do menu đang tắt món, cửa hàng đang tắt nhận đơn hoặc những vấn đề khác. Liên hệ Hỗ trợ cửa hàng Foodoo hotline 0792160460 (zalo) để được hỗ trợ và kiểm tra độ hiển thị của quán nhanh nhất.
                                 </p>
                             </div>
 
@@ -235,7 +246,7 @@
                             </div>
                             <div class="content">
                                 <p>
-                                    Việc thay đổi sản phẩm trong đơn hàng quý khách vui lòng liên hệ Hasaki Care qua Hotline 1800 6324 để được hướng dẫn chi tiết.
+                                    Việc thay đổi sản phẩm trong đơn hàng quý khách vui lòng liên hệ Foodoo Care qua Hotline 1800 6324 để được hướng dẫn chi tiết.
                                 </p>
                                 <p>
                                     Đơn hàng chỉ được hủy khi đơn hàng của quý khách chưa chuyển trạng thái cho đơn vị vận chuyển.
@@ -257,7 +268,7 @@
                                 </a>
                                
                                 <a href="#q2">
-                                    Đăng ký gian hàng trên Loship được miễn phí không?
+                                    Đăng ký gian hàng trên Foodoo được miễn phí không?
                                 </a>
 
                                 <a href="#q3">
@@ -308,6 +319,75 @@
             </div>
         </div>
 
+            <!--Phần footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col main">
+                    <img class="logo" src="./images/foodoo.png" alt="logo_foodoo"/>
+                    <h2>Trường Đại học Mở TP Hồ Chí Minh </h2>
+                    <div class="social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/"><img src="./images/fb.jpg"/></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><img src="./images/ube.png"/></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/"><img src="./images/wi.webp"/></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><img src="./images/in.png"/></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col contact">
+                <h2>CONTRACT INFO</h2>
+                <div class="contact">
+                    <div class="info">
+                        <div class="infoimg">
+                            <img src="./images/placeholder.svg"/>
+                        </div>
+                        <span>371 Nguyễn Kiệm, phường 3, quận Gò Vấp, TP HCM </span>
+                    </div>
+        
+                    <div class="info">
+                        <div class="infoimg">
+                            <img src="./images/message.svg"/>
+                        </div>
+                        <span>1800 5858 84</span>
+                    </div>
+        
+                    <div class="info">
+                        <div class="infoimg">
+                            <img src="./images/phone-call.svg"/>
+                        </div>
+                        <span>quanlydaotao@ou.edu.vn</span>
+                    </div>
+        
+                    <div class="info">
+                        <div class="infoimg">
+                            <img src="./images/placeholder.svg"/>
+                        </div>
+                        <span>https://ou.edu.vn</span>
+                    </div>
+        
+                </div>
+            </div>
+                <div id ="download" class="col download">
+                    <h2>Tải ứng dụng </h2>
+                    <a class="iconapple" href="https://www.apple.com/app-store/" title="App IOS" rel="noreferrer"><img src="./images/ios.png" /></a>
+                    <a class="iconandroid" href="https://play.google.com/store/games" title="App ANDROID " rel="noreferrer"><img src="./images/android.png" /></a>
+                    <hr>
+                </div> 
+            </div>
+        </div>
+                <span class="copyright">"Copyright &copy; 2022 By "<a href="#">Hồ Thanh Thúy</a> and <a href="#">Nguyễn Thị Mỹ Vân </a></span>
+        </footer>
+    
     </div>
 
     <div class="buble">
@@ -322,67 +402,11 @@
                 <img title="Điền form ngay" src="./imgs/cskh/form.jpg"/>
             </div>
             <div id="id4">
-                <img title="Xem địa chỉ ngay" src="/imgs/cskh/map.jpg"/>
+                <img title="Xem địa chỉ ngay" src="./imgs/cskh/map.jpg"/>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-<div class="col main">
-<img class="logo" src="./images/foodoo.png" alt="logo_foodoo"/>
-<h2 class="subfoot">Trường Đại học Mở TP Hồ Chí Minh </h2>
-<div class="social">
-    <ul>
-        <li>
-            <a href="https://www.facebook.com/"><img src="./images/fb.jpg"/></a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/"><img src="./images/ube.png"/></a>
-        </li>
-        <li>
-            <a href="https://twitter.com/"><img src="./images/wi.webp"/></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/"><img src="./images/in.png"/></a>
-        </li>
-    </ul>
-</div>
-</div>
-<div class="col contact">
-<h2 class="subfoot">CONTRACT INFO</h2>
-<div class="contact">
-<div class="info">
-    <div class="infoimg">
-        <img src="./images/placeholder.svg"/>
-    </div>
-    <span>371 Nguyễn Kiệm, phường 3, quận Gò Vấp, TP HCM </span>
-</div>
-<div class="info">
-    <div class="infoimg">
-        <img src="./images/message.svg"/>
-    </div>
-    <span>1800 5858 84</span>
-</div>
-<div class="info">
-    <div class="infoimg">
-        <img src="./images/phone-call.svg"/>
-    </div>
-    <span>quanlydaotao@ou.edu.vn</span>
-</div>
-<div class="info">
-    <div class="infoimg">
-        <img src="./images/placeholder.svg"/>
-    </div>
-    <span>https://ou.edu.vn</span>
-</div>
-</div>
-</div>
 
-</div> 
-            </div>
-        </div>
-    <span class="copyright">"Copyright &copy; 2022 By "<a href="#">Hồ Thanh Thúy</a> and <a href="#">Nguyễn Thị Mỹ Vân </a></span>
-    </footer>
+   
 </body>
 </html>

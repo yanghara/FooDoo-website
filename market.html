@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Đồ ăn, nước uống, ăn vặt, mua sắm">
+    <meta name="description" content="Đặt đồ ăn" />
+    <meta http-equiv="refresh"content="1800" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle K</title>
+
     <link href="./images/logo.jpg" rel="shortcut icon"/>
     <link rel="stylesheet" href="./css/market.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <style>
-        @font-face {
-            src: url(./fonts/DancingScript-VariableFont_wght.ttf);
-            font-family: newfont;
-        }
-        @font-face{
-            src: url(./fonts/Roboto-M.ttf);
-            font-family: roboto;
-        }
-    </style>
     <script src="./js/script_market.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
@@ -28,14 +22,14 @@
         <div class="flex">
 
             <ul class="flex">
-                <li><a href="https://www.apple.com/app-store/">  
+                <li><a href="#download">  
                     Tải ứng dụng Foodoo
                     <button>IOS</button>
                     <button>Android</button></a></li>
                 <li><a href="bonus.html">Đặt giao hàng</a></li>
                 <li><a href="bonus.html">Đi chợ cùng Foodoo</a></li>
-                <li><a href="cskh.html">Chăm sóc khách hàng</a></li>
-                <li><a href="cskh.html">Câu hỏi thường gặp</a></li>
+                <li><a href="cskh.html">Chăm sóc khách hàng</a></li><!--cskh-->
+                <li><a href="cskh.html">Câu hỏi thường gặp</a></li><!--cskh-->
             </ul>
 
         </div>
@@ -48,8 +42,11 @@
 
         <div class="flex"> 
             <div class="find">
-                <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                <input id="foodname" type="text" placeholder="Nhập tên món cần tìm,.. "/>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <ul id="findfood">
+
+                </ul>
             </div>
         </div>
 
@@ -57,7 +54,7 @@
             <ul class="menu flex">
                 <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
                 <li><a href="https://www.facebook.com/">Đăng ký</a></li>
-                <li><a href="cskh.html">Hỗ trợ</a></li>
+                <li><a href="cskh.html">Hỗ trợ</a></li> <!--cskh-->
             </ul>
         </div>
     </header>
@@ -99,7 +96,7 @@
 
                                     <div class="flex add_1">
                                         <div><i class="fa-solid fa-location-dot"></i> 0.8km</div>
-                                        <div class="open_close" style="color:#7ed321">Đang mở cửa</div>
+                                        <div id="hour" class="open_close" style="color:#7ed321">Đang mở cửa</div>
                                     </div>
                 
                                     <div class="flex add_2">
@@ -153,8 +150,8 @@
                                                     <input rel="_2" type="button" value="Đen">
                                                 </div>
                                             </div>
-                                            <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
-                                            <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
+                                            <div id="M" class="color-drinksize" style="width:120px">Size M: 15.000</div>
+                                            <div id="L" class="color-drinksize" style="width:120px">Size L: 20.000</div>
                                         </div>
                                         <span class="add-to-cart">
                                             <i id="1" title="thêm vào giỏ hàng" class="fa-solid fa-cart-plus"></i>
@@ -224,10 +221,10 @@
 
                                     <div class="drink-food">
                                         <div class="img-width">
-                                            <img src="./imgs/circlek/drink1.jpg"/>
+                                            <img id="mainImg5" src="./imgs/circlek/drink1.png"/>
                                         </div>
                                         <div>
-                                            <div>Froster</div>
+                                            <div id="name5">Espresso</div>
                                             <div class="color-drinksize" style="width:120px">Size M: 15.000</div>
                                             <div class="color-drinksize" style="width:120px">Size L: 20.000</div>
                                         </div>
@@ -236,9 +233,9 @@
                                         </span>
                                     </div>
 
-                                    <div class="drink-food">
+                                    <div class="drink-food" >
                                         <div class="img-width">
-                                            <img src="./imgs/circlek/drink7.png"/>
+                                            <img id="mainImg6" src="./imgs/circlek/drink7.png"/>
                                         </div>
                                         <div>
                                             <div>Milo</div>
@@ -655,8 +652,8 @@
                                 </div>
                                 <div class="background-selection-suga">
                                     <div class="selection-size-1">
-                                        <div>M</div>
-                                        <div>L</div>
+                                        <div id="sizeM">M</div>
+                                        <div id="sizeL">L</div>
                                         
                                     </div>
                                 </div>
@@ -690,7 +687,7 @@
                             <div class="foot-page-confirm">
                                 <div class="background-footer">
                                     <div class="sum">
-                                       <span style="font-weight: bold;" >15.000VND</span>
+                                       <span id="sum" style="font-weight: bold;" >15.000VND</span>
                                     </div>
                                     <div>
                                         <div class="payment">
@@ -727,9 +724,13 @@
                                             <a style="color: #fff;">Gợi ý</a>
                                         </div>
                                     </div>
+
+                                    
                                     <div class="suborder">
                                         <div class="list-view">
+                                            <!--Chỗ thêm món ăn-->
                                             <div class="list-view-1">Hãy chọn món yêu thích của bạn trên menu để đặt giao hàng ngay!</div>
+                                            
                                         </div>
                                         <div class="list-view">
                                             <div class="list-view-2">
@@ -752,9 +753,10 @@
                     </div>
                 </div>
             </div>
+
+            
+
         </main>
    </section>
-
-   <!--Phần footer-->
 </body>
 </html>

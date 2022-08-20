@@ -2,12 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: Roboto-M;
-    src: url(/bt-giuaky/font/Roboto-M.ttf);
-}
-
-
 :root{
     --width:80%;
 }
@@ -94,7 +88,6 @@ header > div > img {
     transform: translateY(-50%);
     position:absolute;
     left: 20px;
-    cursor: pointer;
 }
 
 div.find > input{
@@ -147,7 +140,7 @@ div {
 }
 
 .subbanner {
-    background: #477d65 url(/bt-giuaky/imgs/cskh/background.jpg) no-repeat center top;
+    background: #477d65 no-repeat center top;
     height: 210px;
     padding-top: 40px;
 }
@@ -286,6 +279,8 @@ div.item_ques {
     padding-left: 10px;
 }
 
+/*Phần chat*/
+
 #flip {
     padding: 5px;
     text-align: center;
@@ -373,10 +368,8 @@ div.buble-position img:hover {
     box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
     
 }
-div.breakcrumb > a:first-child {
-    cursor: pointer;
-}
-/*footer*/
+
+/*Phần footer*/
 footer 
 {
     width: 100%;
@@ -388,9 +381,6 @@ footer
 .info span:hover
 {
     color: #fa9e1b;
-}
-h2.subfoot {
-    font-size: medium;
 }
 .copyright
 {  
@@ -451,4 +441,7 @@ a.download
     height: 35px;
     width: 20px;
 
+}
+.download {
+    display: none;
 }

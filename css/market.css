@@ -88,7 +88,6 @@ header > div > img {
     transform: translateY(-50%);
     position:absolute;
     left: 20px;
-    cursor: pointer;
 }
 
 div.find > input{
@@ -179,7 +178,6 @@ div.title-box {
 
 div.flex h1.subtitle {
     margin: 10px 35px;
-    font-family: roboto;
 }
 
 div.subtitle {
@@ -281,7 +279,6 @@ div.title-categorize h3 {
     padding: 16px 16px 0;
     margin:0;
     color: #876445;
-    font-family: newfont;
 }
 
 div.menu-store-2 ul {
@@ -499,6 +496,12 @@ div.name-product h3, label {
     height: 24px;
 }
 
+.decorate-title {
+    text-align: center;
+    line-height: 44px;
+    height: 24px;
+}
+
 div.box-selection > div:nth-child(even){
     background: rgba(8, 0, 64, 0.04);
 }
@@ -574,9 +577,15 @@ div.box-selection > div:nth-child(even){
     cursor: pointer;
 }
 
+.selection {
+    position: relative;
+}
+
 .foot-page-confirm {
     width: 550px;
     height: 42px;
+    position: fixed;
+    bottom: 10%;
 }
 
 .background-footer {
@@ -606,4 +615,21 @@ div.payment {
     cursor: pointer;
 }
 
+/*Tìm món ăn*/
 
+#findfood{
+    background-color: #fff;
+    margin: 0;
+    position:absolute;
+    z-index: 100;
+    color:rgba(8, 0, 64, 0.04);
+    width:500px;
+    border-radius: 10px;
+}
+
+#findfood > li {
+    display: block;
+    padding: 5px;
+}
+
+/*Phần footer*/
