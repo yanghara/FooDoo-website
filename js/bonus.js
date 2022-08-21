@@ -4,6 +4,13 @@ $(document).ready(function() {
             scrollTop: 0
         }, 1000);
     })
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a.go').fadeIn();
+        } else {
+            $('a.go').fadeOut();
+        }
+    });
 })
 function back(){
         location.href ="index.html"

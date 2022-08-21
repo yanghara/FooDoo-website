@@ -68,6 +68,18 @@ function init() {
     document.getElementById("hour").innerHTML = greeting;
 
     $(document).ready(function(){
+        $("a.go").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+        })
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('a.go').fadeIn();
+            } else {
+                $('a.go').fadeOut();
+            }
+        });
         $(".page-confirm").hide();
 
         $("#cmt").click(function(){
@@ -201,6 +213,13 @@ function init() {
                 alert("Đã thêm vào giỏ hàng!");
             });
         })
+
+        $(".menu-store-1").hide();
+
+        $("#icon-cate").click(function() {
+            $("div.menu-store-1").slideToggle("slow");
+        })
+
 
         
     })

@@ -21,6 +21,7 @@
             src: url(./fonts/static/DancingScript-Regular.ttf);
             font-family: abc;
         }
+
         </style>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
         <script>
@@ -47,7 +48,7 @@
         />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link href="./css/css.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./css/mobile.css">
+        
         <script src="./js/main.js"></script>
 
     </head>
@@ -77,8 +78,11 @@
     
             <div class="flex"> 
                 <div class="find">
-                    <input type="text" placeholder="Nhập tên quán ăn,.. "/>
+                    <input id="foodname" type="text" placeholder="Nhập tên món cần tìm,.. "/>
                     <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <ul id="findfood">
+    
+                    </ul>
                 </div>
             </div>
     
@@ -619,7 +623,7 @@ Tỉnh/ Thành phố
             <p>Foodoo - Bên cạnh bạn mọi lúc mọi nơi</p>
             </div>
             <div class="subscribe">
-                <a href="shipper.html" target="_blank">Đăng kí</a>
+                <a href="shipper.html" target="_blank">Đăng kí ngay!</a>
             </div>
 
         </div>

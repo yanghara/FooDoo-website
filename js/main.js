@@ -1,6 +1,8 @@
 let names = ['Trà sữa GongCha', 'Trà sữa', 'Trà sữa Boba Pop', 'Cơm tấm', 'Bún thịt nướng',
             'Cơm gà', 'Bánh mì', 'sandwich', 'Bánh kem', 'Phở']
 $(document).ready(function(){
+
+    /*hiện form*/
     $(".button ").click(function(){
         $(".fullscreen").show()
     });
@@ -12,6 +14,25 @@ $(document).ready(function(){
     })
     $(".bForm").click(function(){
         alert("Thêm vào giỏ hàng thành công");
+    })
+
+    /*gợi ý tên */
+    $("#foodname").keyup(function(){
+        let txt = $(this).val().toLowerCase();
+
+        let h = '';
+        for(let n of names)
+            if(n.toLowerCase().indexOf(txt) >= 0){
+                h += `
+                <li><a href="#">${n}</a></li>`;
+        }
+
+        if (h !== ''){}
+        $("#findfood").html(h);
+    })
+
+    $("#findfood").on("click", "a", function(){
+        $("#foodname").val($(this).text());
     })
 
     $("#1").click(function(){
@@ -158,6 +179,13 @@ $(document).ready(function() {
             scrollTop: 0
         }, 1000);
     })
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a.go').fadeIn();
+        } else {
+            $('a.go').fadeOut();
+        }
+    });
 })
 function back() {
     location.href ="index.html"

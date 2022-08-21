@@ -533,13 +533,14 @@ p.pp {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    display: block;
+    display: none;
     width: 100px;
     padding: 0.5rem 0.5rem;
     background-color:orange;
     color: white;
     z-index: 200;
     text-align: center;
+    border-radius: 60px;
 }
 #title-img{
     width: 150px;
@@ -553,5 +554,140 @@ p.pp {
     font-weight: 600;
     font-family: roboto;
     font-size: large;
+}
+#findfood{
+    background-color: #fff;
+    margin: 0;
+    position:absolute;
+    z-index: 100;
+    color:rgba(8, 0, 64, 0.04);
+    width:500px;
+    border-radius: 10px;
+}
+
+#findfood > li {
+    display: block;
+    padding: 5px;
+    
+}
+@media screen and (max-width: 1023px) {
+    div.product {
+        width: 33.33%;
+    }
+    div.new {
+        width: 33.33%;
+    }
+    .promotion {
+        display: none;
+    }
+    div.news >.new:last-child 
+    {
+        display: none;
+    }
+    div.market{
+        width: 50%;
+    }
+    #del {
+        display: none;
+    }
+    .viewall {
+        margin: 0 auto;
+        padding: 15px 0;
+    }
+    nav.flex {
+        display: none;
+    }
+    header > div > img {
+        width: 100px;
+    }
+    div.find > input{
+        width:230px;
+        font-size:15px;
+    }
+    li.link:nth-child(3),  li.link:nth-child(4), li.link:nth-child(5){
+        display: none;
+    }
+    .v-menu {
+        margin-top: 300px;
+    }
+    header ul.menu li a {
+        padding: 0;
+    }
+    li.link{
+        padding: 0 30px;
+    }
+    h2.subject {
+        text-align: center;
+    }
+    .download {
+        margin: 0 300px;
+    }
+    .main, .contact {
+        margin: 0 15px;
+    }
+    div.fighter {
+        display: flex;
+        flex-direction: column;
+    }
+    .bonus{
+        width: 300px;
+        height:550px;
+    }
+    .voucher{
+        display: none;
+    }
+    div.title {
+        text-align: center;
+    }
+    #title-img {
+        width: 135px;
+        margin: 0 75px;
+    }
+}
+
+@media screen and (max-width:871px) {
+    section .menu.flex {
+        margin: 0 3rem;
+    }
+    .download {
+        margin: 0 15px;
+    }
+}
+@media screen and (max-width:767px) {
+    div.product {
+        width: 50%;
+    }
+    div.new {
+        width: 50%;
+    }
+    div.product:last-child {
+        display: none;
+    }
+    div.news >.new:last-child 
+    {
+        display: block;
+    }
+    div.fighter {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe a {
+        align-items: center;
+    }
+    header.flex {
+        display: flex;
+        flex-direction: column;
+    }
+    header > div > img {
+        width: 250px;
+        top: 0;
+        transform: translateY(0);
+        position: relative;
+        left: 20px;
+    }
+    div.find > input{
+        width:300px;
+        font-size:17px;
+    }
 }
 

@@ -631,5 +631,292 @@ div.payment {
     display: block;
     padding: 5px;
 }
+#icon-cate {
+    display: block;
+    width: 43px;
+    font-size: 24px;
+    padding: 6px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -16px;
+    margin-left: -3px;
+}
+.go {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    width: 100px;
+    padding: 0.5rem 0.5rem;
+    background-color:orange;
+    color: white;
+    z-index: 200;
+    text-align: center;
+    border-radius: 60px;
+}
+.go:hover {
+    color: white;
+}
+/*phần responsive*/
+@media screen and (max-width: 500px)
+    {
+body {
+    font-size: 13px;
+}
 
-/*Phần footer*/
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --width:100%;
+}
+/*Phần nav*/
+
+nav {
+    width: var(--width);
+    height: 80px;
+}
+
+nav > div{
+    width: var(--width);
+}
+
+nav div ul:first-child{
+    padding: 0;
+}
+
+nav.flex div.flex ul li{
+    margin: 0 2px;
+}
+
+/*Phần header*/
+header {
+    width: var(--width);
+    
+}
+
+header.flex{
+    flex-direction: column;
+}
+
+header > div{
+    display: block;
+    height: 80px;
+    background-color:#fff;
+}
+
+header > div > img{
+    width: 63%;
+    top: 42px;
+    padding: 5px;
+    z-index: 1;
+    margin-left: 14%;
+} 
+
+header > div.flex {
+    height: 40px;
+    margin: 0;
+    background-color: #fff;
+}
+
+header div.find {
+    width: var(--width);
+
+}
+
+div.find input {
+    width:90%;
+    margin: 3px 5px;
+    padding: 5px 8px;
+    font-size: 15px;
+    border: 1px solid #000;
+}
+
+header > div:nth-child(3) {
+    height: 42px;
+    width: var(--width);
+    background-color: beige;
+}
+
+header > div:nth-child(3) ul {
+    padding: 0px;
+    margin:0;
+    justify-content: space-around;
+}
+ul.menu li {
+    margin: 0;
+    border-radius: 0 !important;
+    width: 100%;
+    height: 42px;
+    text-align: center;
+}
+
+ul.menu li:hover {
+    background-color: darkblue;
+    color: #fff;
+    border-radius: 0;
+}
+
+aside div, main > div.right {
+    display: none;;
+}
+
+/*Phần section*/
+section.container {
+    width: var(--width);
+}
+
+/*Phần main*/
+
+main.order-page {
+    margin-top:0;
+    width: var(--width);
+}
+
+/*Phần div.left*/
+
+div.left{
+    width: var(--width);
+}
+
+div.title-box{
+    width: var(--width);
+}
+
+div.title-box  div img {
+    width: 99px;
+
+}
+
+div.title-box  div.flex > h1 {
+    margin: 10px;
+}
+
+div.title-box div.store{
+    border:none;
+    margin: 0;
+    width:34%;
+}
+
+div.title-box  div.store a {
+    border: 1px dashed #000;
+    font-size: 13px;
+    color: #000 !important;
+    padding: 3px;
+    border-radius: 10px;
+    /*text-align: center;*/
+    width:100%;
+}
+
+div.add_1 {
+    margin: 5px 16px !important;
+}
+
+div.add_1 div:first-child {
+    margin-right: 6px;
+}
+
+div.address {
+    margin-left: 16px;
+    padding: 5px 0;
+}
+
+/*Phần div.menu-store*/
+
+div.menu-store {
+    width: var(--width);
+    display:block !important;
+}
+
+
+#icon-cate {
+    display: block;
+    background: beige;
+    width: 43px;
+    font-size: 24px;
+    padding: 6px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -16px;
+    margin-left: -3px;
+}
+
+div.menu-store-1 {
+    width: var(--width);
+    height:fit-content;
+}
+
+div.menu-store-1 > div {
+    width: var(--width);
+    margin-bottom: 5px;
+}
+
+div.categorize {
+    width: 170px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px 18px;
+}
+
+div.menu-store-2 {
+    width: var(--width);
+    margin-left: -17px;
+    margin-top: 5px;
+}
+
+div.menu-store-2 > div{
+    width: var(--width);
+    height: fit-content;
+}
+
+div.img-width > img {
+    width: 87px;
+    transition: width 1s;
+}
+
+div.img-width img:hover {
+    width: 120px;
+}
+div.drink-food {
+    padding: 11px 13px;
+}
+
+/*page confirm*/
+
+.page-confirm {
+    width: var(--width);
+    top: 11%;
+    left: 0;
+}
+.background-confirm {
+    width: var(--width);
+}
+
+div.img-head img {
+    margin: 5px 30%;
+}
+
+div.box-selection {
+    width: var(--width);
+}
+
+.selection-size {
+    margin-left: 33%;
+}
+
+.foot-page-confirm {
+    width: var(--width);
+    height: 42px;
+    position: sticky;
+    bottom: 0 !important;
+}
+
+.background-footer {
+    width: var(--width);
+}
+
+.background-footer > div:last-child {
+    margin-right: 0% ;
+}
+    }
