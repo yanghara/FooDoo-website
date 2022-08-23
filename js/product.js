@@ -1,5 +1,6 @@
 function init()
 {
+    /*change img*/
     let img = document.getElementById("mainImg1")
         img.addEventListener("mouseenter",function(){
         img.src=`./images/sang_${2}.jpg`;
@@ -130,21 +131,25 @@ function init()
            img14.src=`./images/nuoc_${1}.jpg`
     })
 }
-
-$(document).ready(function() {
-    $("a.go").click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 1000);
+//...
+    /*go to top */
+    $(document).ready(function() {
+        $("a.go").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('a.go').fadeIn();
+            } else {
+                $('a.go').fadeOut();
+            }
+        });
     })
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('a.go').fadeIn();
-        } else {
-            $('a.go').fadeOut();
-        }
-    });
-})
-function back() {
-    location.href ="index.html"
-}
+//...
+    /*back index */
+    function back() {
+        location.href ="index.html"
+    }
+//...

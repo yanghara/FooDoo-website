@@ -1,3 +1,4 @@
+// go to top
 $(document).ready(function() {
     $("a.go").click(function() {
         $("html, body").animate({
@@ -12,9 +13,13 @@ $(document).ready(function() {
         }
     });
 })
+//...
+//back index
 function back(){
         location.href ="index.html"
 }
+//...
+//change img
 function init()
 {
     let img = document.getElementById("mainImg1")
@@ -187,3 +192,4 @@ function init()
            img19.src=`./images/${9}.png`
     })
 }
+//...

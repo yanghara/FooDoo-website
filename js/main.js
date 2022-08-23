@@ -1,7 +1,8 @@
+/*name food*/
 let names = ['Trà sữa GongCha', 'Trà sữa', 'Trà sữa Boba Pop', 'Cơm tấm', 'Bún thịt nướng',
             'Cơm gà', 'Bánh mì', 'sandwich', 'Bánh kem', 'Phở']
+//...
 $(document).ready(function(){
-
     /*hiện form*/
     $(".button ").click(function(){
         $(".fullscreen").show()
@@ -15,7 +16,21 @@ $(document).ready(function(){
     $(".bForm").click(function(){
         alert("Thêm vào giỏ hàng thành công");
     })
-
+//...
+    /*go to top*/
+    $("a.go").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+    })
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a.go').fadeIn();
+        } else {
+            $('a.go').fadeOut();
+        }
+    });
+//...
     /*gợi ý tên */
     $("#foodname").keyup(function(){
         let txt = $(this).val().toLowerCase();
@@ -30,11 +45,11 @@ $(document).ready(function(){
         if (h !== ''){}
         $("#findfood").html(h);
     })
-
     $("#findfood").on("click", "a", function(){
         $("#foodname").val($(this).text());
     })
-
+//...
+    /*img of form */
     $("#1").click(function(){
         let m1=document.getElementById("mainImg1")
         $("#title-img").attr("src", m1.src);
@@ -161,32 +176,20 @@ $(document).ready(function(){
         $("#title-img").attr("src", m25.src);
         $("#title-name").text("Gỏi cuốn Hà Giang")
     })
-
-    
-
 });
-function DK(){
-    if (confirm("BẠN ĐÃ CHẮC CHẮN CHƯA?")==true) {
-        alert("CHÚNG TÔI SẼ LIỆN HỆ VỚI BẠN TRONG THỜI GIAN SỚM NHẤT! XIN CẢM ƠN!")
-
-       }    else {
-        alert( "XIN THỬ LẠI!")
-       }
-}
-$(document).ready(function() {
-    $("a.go").click(function() {
-        $("html, body").animate({
-            scrollTop: 0
-        }, 1000);
-    })
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('a.go').fadeIn();
-        } else {
-            $('a.go').fadeOut();
+//...
+    /*subcrise shipper*/
+    function DK(){
+        if (confirm("BẠN ĐÃ CHẮC CHẮN CHƯA?")==true) {
+            alert("CHÚNG TÔI SẼ LIỆN HỆ VỚI BẠN TRONG THỜI GIAN SỚM NHẤT! XIN CẢM ƠN!")
+            }
+            else {
+            alert( "XIN THỬ LẠI!")
         }
-    });
-})
-function back() {
-    location.href ="index.html"
-}
+    }
+//...
+/*back index*/
+    function back() {
+        location.href ="index.html"
+    }
+//...

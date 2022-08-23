@@ -16,14 +16,9 @@ function init(){
           $("#panel").show();
       })
   });
-
-  /*$(document).ready(function(){
-    $("div.send-button button").click(function(){
-        alert("Tin nhắn đã gửi thành công! Hãy check Messenger mỗi ngày nhé!");  
-      });
-    });*/
 }
-
+//...
+/*back index*/
 function back(){
   location.href ="index.html";
 }

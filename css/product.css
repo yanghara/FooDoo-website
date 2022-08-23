@@ -228,6 +228,7 @@ select {
 }
 .products {
     background-color: #fff;
+    border-radius: 8px;
 }
 .subject {
     text-align: center;
@@ -251,7 +252,7 @@ div.pro img {
     width: 100%;
 }
 div.pro > div {
-    border: 1px solid blue;
+    border: 1px solid rgb(162, 162, 228);
     border-radius: 8px;
     padding: 10px;
     background-color: var(--bg);

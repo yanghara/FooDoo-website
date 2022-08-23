@@ -223,8 +223,8 @@ select {
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
-    border-radius: 8px;
     margin-bottom: 15px;
+    border-radius: 8px;
 }
 div.pro {
     width: 25%;
@@ -235,7 +235,7 @@ div.pro img {
     width: 100%;
 }
 div.pro > div {
-    border: 1px solid blue;
+    border: 1px solid rgb(153, 153, 238);
     border-radius: 8px;
     padding: 10px;
     background-color: var(--bg);

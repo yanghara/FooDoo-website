@@ -8,14 +8,7 @@
     --bg: #f1e7e7;
 
 }
-@font-face {
-    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
-    font-family: newfont;
-}
-@font-face{
-    src: url(./fonts/Roboto-M.ttf);
-    font-family: roboto;
-}
+
 @keyframes changepro {
     0% {
         color: rgb(179, 97, 97);
@@ -77,10 +70,10 @@ h1 {
     color:red;
     text-transform: capitalize;
     font-size: 32px;
-    font-family:roboto ;
+    font-family:newfont ;
 }
 .content {
-    color: #333;
+    color: rgb(14, 13, 13);
     position: absolute;
     bottom: 100px;
     max-width: 450px;

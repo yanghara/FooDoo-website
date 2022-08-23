@@ -9,40 +9,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cửa hàng Foodoo</title>
     <link href="./images/logo.jpg" rel="shortcut icon"/>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
-        />
-        <style>
-            @font-face {
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @font-face {
             src: url(./fonts/DancingScript-VariableFont_wght.ttf);
             font-family: newfont;
         }
-            @font-face {
+        @font-face {
             src: url(./fonts/static/DancingScript-Regular.ttf);
             font-family: abc;
         }
-        </style>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <link 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-        rel="stylesheet" 
-        /> 
-        <link
-        href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css"
-        rel="stylesheet"
-        />
-        <link 
-        rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
-        />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="./css/bonus.css">
-        <script src="./js/bonus.js"></script>
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /> 
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css" />
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/bonus.css">
+    <script src="./js/bonus.js"></script>
 </head>
 <body onload="init()">
     <a class="go" href="javascript:;"><i class="fa-solid fa-angles-up"></i></a>
-    <!--header-->
+    <!--header1-->
     <nav class="flex">
         <div class="flex">
 
@@ -51,27 +43,25 @@
                     Tải ứng dụng Foodoo
                     <button>IOS</button>
                     <button>Android</button></a></li>
-                <li><a href="#">Đặt giao hàng</a></li>
-                <li><a href="#">Đi chợ cùng Foodoo</a></li>
+                <li><a href="bonus.html">Đặt giao hàng</a></li>
+                <li><a href="bonus.html">Đi chợ cùng Foodoo</a></li>
                 <li><a href="cskh.html">Chăm sóc khách hàng</a></li><!--cskh-->
                 <li><a href="cskh.html">Câu hỏi thường gặp</a></li><!--cskh-->
             </ul>
 
         </div>
     </nav>
-    
+    <!--header2-->
     <header class="flex">
         <div>
             <img onclick="back()" src="./images/foodoo.png" alt="logo"/>
         </div>
-
         <div class="flex"> 
             <div class="find">
                 <input type="text" placeholder="Nhập tên quán ăn,.. "/>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </div>
-
         <div>
             <ul class="menu flex">
                 <li><a href="https://www.facebook.com/">Đăng nhập</a></li>
@@ -80,12 +70,11 @@
             </ul>
         </div>
     </header>
-    <!--header-->
-
     <!--content-->
     <section class="maincon" style="background-image: url(./images/main-banner.jpg); display: flex;">
         <div class="none"></div>
         <div class="now">
+            <!--Gần đây nhất-->
            <div class="search">
                 <span><select>
                     <option value="Gần đây nhất">Gần đây nhất</option>
@@ -93,6 +82,7 @@
                 </select></span>
                 <span class="chip">Đang mở cửa<i style="margin-left: 5px;" class="fa-solid fa-check"></i></span>
             </div>
+            <!--Sản Phẩm-->
             <div class="products">
                 <div class="pro">
                     <div>

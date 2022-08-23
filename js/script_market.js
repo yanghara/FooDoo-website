@@ -8,7 +8,7 @@ function init() {
     for (let bnt of buttons){
         bnt.addEventListener("click", function() {
             let prefix = bnt.getAttribute("rel");
-                m.src=`/bt-giuaky/imgs/circlek/drink2${prefix}.png`
+                m.src=`./imgs/circlek/drink2${prefix}.png`
 
         })
     }
@@ -18,7 +18,7 @@ function init() {
     for (let bnt1 of buttons1){
         bnt1.addEventListener("click", function() {
             let prefix1 = bnt1.getAttribute("rel");
-                m1.src=`/bt-giuaky/imgs/circlek/drink3${prefix1}.png`
+                m1.src=`./imgs/circlek/drink3${prefix1}.png`
         })
     }
 
@@ -27,7 +27,7 @@ function init() {
     for (let bnt2 of buttons2){
         bnt2.addEventListener("click", function() {
             let prefix2 = bnt2.getAttribute("rel");
-                m2.src=`/bt-giuaky/imgs/circlek/drink4${prefix2}.png`
+                m2.src=`./imgs/circlek/drink4${prefix2}.png`
         })
     }
 
@@ -36,7 +36,7 @@ function init() {
     for (let bnt3 of buttons3){
         bnt3.addEventListener("click", function() {
             let prefix3 = bnt3.getAttribute("rel");
-                m3.src=`/bt-giuaky/imgs/circlek/drink6${prefix3}.png`
+                m3.src=`./imgs/circlek/drink6${prefix3}.png`
         })
     }
 
@@ -44,7 +44,7 @@ function init() {
     let buttons5 = document.querySelectorAll(".bnt6 > input")
     for (let bnt6 of buttons5){
         bnt5.addEventListener("click", function() {
-            m4.src=`/bt-giuaky/imgs/circlek/drink1.png`
+            m4.src=`./imgs/circlek/drink1.png`
         })
     }
 
@@ -52,7 +52,7 @@ function init() {
     let buttons6 = document.querySelectorAll(".bnt7 > input")
     for (let bnt7 of buttons6){
         bnt7.addEventListener("click", function() {
-            m5.src=`/bt-giuaky/imgs/circlek/drink7.png`
+            m5.src=`./imgs/circlek/drink7.png`
         })
     }
 

@@ -88,6 +88,7 @@ header > div > img {
     transform: translateY(-50%);
     position:absolute;
     left: 20px;
+    cursor: pointer;
 }
 
 div.find > input{

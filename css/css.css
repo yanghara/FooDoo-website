@@ -249,7 +249,7 @@ div.product {
 }
 
 div.product > div {
-    border: 1px solid blue;
+    border: 1px solid rgb(95, 95, 190);
     border-radius: 8px;
     padding: 10px;
     background-color: var(--bg);
@@ -564,7 +564,10 @@ p.pp {
     width:500px;
     border-radius: 10px;
 }
-
+ul#findfood {
+    display:block !important ;
+    
+}
 #findfood > li {
     display: block;
     padding: 5px;
@@ -660,7 +663,7 @@ p.pp {
     div.new {
         width: 50%;
     }
-    div.product:last-child {
+    div.product:nth-child(7) {
         display: none;
     }
     div.news >.new:last-child 
@@ -689,5 +692,41 @@ p.pp {
         width:300px;
         font-size:17px;
     }
+}
+@media screen and (max-width:360px) {
+    .left {
+        display: none;
+    }
+    .right {
+        width: 100%;
+    }
+    div.product {
+        width: 50%;
+    }
+    div.new {
+        width: 50%;
+    }
+    div.market {
+        width: 50%;
+    }
+    .social > ul > li:last-child {
+        display: none;
+    }
+    section ul.menu.flex {
+        margin: auto;
+    }
+    div.product img, div.new img{
+        width: 150px;
+        height: 100px;
+        width: 100%;
+    }
+    
+    div.new > div {
+        height: 250px;
+    }
+    div.product > div {
+        height: 250px;
+    }
+
 }
 
